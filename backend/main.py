@@ -270,3 +270,5 @@ if __name__ == "__main__":
 # GET /api/admin/degrees?type=UG
 
 # GET /api/admin/degree/{degree_id}/courses
+
+# GET /api/admin/degree/{degree_id}/history
