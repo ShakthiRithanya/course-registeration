@@ -130,3 +130,5 @@ if __name__ == "__main__":
 # courses seeded per degree with semester allocation
 
 # admin: admin@college.edu / admin123
+
+# faculty1@college.edu, faculty2@college.edu
