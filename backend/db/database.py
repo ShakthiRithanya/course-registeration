@@ -128,3 +128,5 @@ if __name__ == "__main__":
 # degrees: B.Tech, M.Tech, BCA, MCA, B.Sc, M.Sc
 
 # courses seeded per degree with semester allocation
+
+# admin: admin@college.edu / admin123
