@@ -125,3 +125,5 @@ const AdminAllocation = () => {
 export default AdminAllocation;
 
 // faculty course allocation
+
+// POST and DELETE allocate
