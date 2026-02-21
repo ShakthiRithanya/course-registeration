@@ -268,3 +268,5 @@ if __name__ == "__main__":
 # GET /api/faculty/backlogs/{faculty_id}
 
 # GET /api/admin/degrees?type=UG
+
+# GET /api/admin/degree/{degree_id}/courses
