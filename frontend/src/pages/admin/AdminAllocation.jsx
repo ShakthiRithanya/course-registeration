@@ -123,3 +123,5 @@ const AdminAllocation = () => {
 };
 
 export default AdminAllocation;
+
+// faculty course allocation
