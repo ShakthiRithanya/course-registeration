@@ -186,3 +186,5 @@ const StudentEnroll = ({ user }) => {
 export default StudentEnroll;
 
 // GET /api/student/enrollable
+
+// faculty select + credit total
