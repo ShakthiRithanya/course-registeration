@@ -260,3 +260,5 @@ if __name__ == "__main__":
 # GET /api/student/enrollable/{student_id}
 
 # POST /api/student/enroll min 20 credits
+
+# GET /api/faculty/courses/{faculty_id}
