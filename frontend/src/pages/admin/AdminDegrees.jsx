@@ -255,3 +255,5 @@ export default AdminDegrees;
 // view classes modal
 
 // courses modal
+
+// history GPA modal
