@@ -68,3 +68,5 @@ const FacultyBacklogs = ({ user }) => {
 };
 
 export default FacultyBacklogs;
+
+// GET /api/faculty/backlogs
