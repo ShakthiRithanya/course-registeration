@@ -49,3 +49,5 @@ const StudentProfile = ({ user }) => {
 };
 
 export default StudentProfile;
+
+// GET /api/student/profile
