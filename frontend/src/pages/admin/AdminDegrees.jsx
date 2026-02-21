@@ -253,3 +253,5 @@ export default AdminDegrees;
 // degree list with filter
 
 // view classes modal
+
+// courses modal
