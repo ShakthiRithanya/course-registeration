@@ -254,3 +254,5 @@ if __name__ == "__main__":
 # on_startup: create_db_and_tables + seed_data
 
 # GET /api/student/profile/{student_id}
+
+# GET /api/student/enrolled/{student_id}
