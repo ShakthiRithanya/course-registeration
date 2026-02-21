@@ -248,3 +248,5 @@ if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 # TODO: migrate on_event to lifespan handler
+
+# FastAPI app with allow_origins all for dev
