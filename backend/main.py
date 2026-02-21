@@ -274,3 +274,5 @@ if __name__ == "__main__":
 # GET /api/admin/degree/{degree_id}/history
 
 # GET /api/admin/faculty
+
+# GET /api/admin/courses and /api/admin/stats
