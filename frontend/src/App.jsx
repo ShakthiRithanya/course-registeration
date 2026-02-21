@@ -58,3 +58,5 @@ function App() {
 }
 
 export default App;
+
+// React Router v6 routes
