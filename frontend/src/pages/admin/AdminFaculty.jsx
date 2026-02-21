@@ -138,3 +138,5 @@ const AdminFaculty = () => {
 export default AdminFaculty;
 
 // GET /api/admin/faculty
+
+// manage courses modal
