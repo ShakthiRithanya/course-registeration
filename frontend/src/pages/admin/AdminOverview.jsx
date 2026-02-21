@@ -105,3 +105,5 @@ const AdminOverview = () => {
 };
 
 export default AdminOverview;
+
+// GET /api/admin/stats
