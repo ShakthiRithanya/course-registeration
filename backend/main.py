@@ -276,3 +276,5 @@ if __name__ == "__main__":
 # GET /api/admin/faculty
 
 # GET /api/admin/courses and /api/admin/stats
+
+# POST /api/admin/allocate faculty to course
