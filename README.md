@@ -48,3 +48,5 @@ App runs at http://localhost:5173
 - GET /api/admin/stats – System statistics
 - POST /api/admin/allocate – Allocate faculty to course
 - DELETE /api/admin/allocate/{fid}/{cid} – Remove allocation
+
+<!-- README for Course Registration System -->
