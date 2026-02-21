@@ -27,3 +27,5 @@ def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None
     return encoded_jwt
 
 # bcrypt CryptContext for password hashing
+
+# create_access_token with expiry and HS256
