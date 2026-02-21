@@ -49,3 +49,5 @@ const FacultyProfile = ({ user }) => {
 };
 
 export default FacultyProfile;
+
+// GET faculty profile
