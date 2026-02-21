@@ -61,3 +61,5 @@ class Enrollment(SQLModel, table=True):
     faculty: User = Relationship(
         sa_relationship_kwargs={"foreign_keys": "[Enrollment.faculty_id]"}
     )
+
+# User: id, name, email, hashed_password, role
