@@ -122,3 +122,5 @@ def seed_data():
 if __name__ == "__main__":
     create_db_and_tables()
     seed_data()
+
+# SQLite engine + create_db_and_tables
