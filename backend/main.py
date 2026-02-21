@@ -250,3 +250,5 @@ if __name__ == "__main__":
 # TODO: migrate on_event to lifespan handler
 
 # FastAPI app with allow_origins all for dev
+
+# on_startup: create_db_and_tables + seed_data
