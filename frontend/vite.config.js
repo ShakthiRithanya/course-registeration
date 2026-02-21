@@ -13,3 +13,5 @@ export default defineConfig({
     }
   }
 })
+
+// proxy /api to localhost:8000
