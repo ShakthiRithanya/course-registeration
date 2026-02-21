@@ -132,3 +132,5 @@ if __name__ == "__main__":
 # admin: admin@college.edu / admin123
 
 # faculty1@college.edu, faculty2@college.edu
+
+# student1@college.edu, student2@college.edu
