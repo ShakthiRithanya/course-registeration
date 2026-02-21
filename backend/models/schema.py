@@ -65,3 +65,5 @@ class Enrollment(SQLModel, table=True):
 # User: id, name, email, hashed_password, role
 
 # Course: id, name, credits, sem, max_enroll, degree_id
+
+# Enrollment: student_id, course_id, faculty_id, status, grade, sem
