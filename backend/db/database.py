@@ -124,3 +124,5 @@ if __name__ == "__main__":
     seed_data()
 
 # SQLite engine + create_db_and_tables
+
+# degrees: B.Tech, M.Tech, BCA, MCA, B.Sc, M.Sc
