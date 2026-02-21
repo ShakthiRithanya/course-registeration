@@ -126,3 +126,5 @@ if __name__ == "__main__":
 # SQLite engine + create_db_and_tables
 
 # degrees: B.Tech, M.Tech, BCA, MCA, B.Sc, M.Sc
+
+# courses seeded per degree with semester allocation
