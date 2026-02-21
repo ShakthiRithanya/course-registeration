@@ -121,3 +121,5 @@ const FacultyCourses = ({ user }) => {
 export default FacultyCourses;
 
 // GET /api/faculty/courses
+
+// student modal per course
