@@ -44,3 +44,5 @@ const AdminDashboard = ({ user, logout }) => {
 };
 
 export default AdminDashboard;
+
+// admin navigation hub
