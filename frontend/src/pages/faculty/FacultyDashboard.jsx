@@ -35,3 +35,5 @@ const FacultyDashboard = ({ user, logout }) => {
 };
 
 export default FacultyDashboard;
+
+// faculty nav dashboard
