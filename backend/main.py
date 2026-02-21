@@ -280,3 +280,5 @@ if __name__ == "__main__":
 # POST /api/admin/allocate faculty to course
 
 # DELETE /api/admin/allocate/{faculty_id}/{course_id}
+
+# GET /health -> status ok
