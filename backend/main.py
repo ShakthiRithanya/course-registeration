@@ -264,3 +264,5 @@ if __name__ == "__main__":
 # GET /api/faculty/courses/{faculty_id}
 
 # GET /api/course/{course_id}/students
+
+# GET /api/faculty/backlogs/{faculty_id}
