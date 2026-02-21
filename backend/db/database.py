@@ -134,3 +134,5 @@ if __name__ == "__main__":
 # faculty1@college.edu, faculty2@college.edu
 
 # student1@college.edu, student2@college.edu
+
+# faculty allocated to courses via FacultyCourse
