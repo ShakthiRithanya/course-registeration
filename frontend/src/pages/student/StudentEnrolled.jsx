@@ -110,3 +110,5 @@ const StudentEnrolled = ({ user }) => {
 };
 
 export default StudentEnrolled;
+
+// GET /api/student/enrolled
