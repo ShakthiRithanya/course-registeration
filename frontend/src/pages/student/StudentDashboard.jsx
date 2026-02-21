@@ -34,3 +34,5 @@ const StudentDashboard = ({ user, logout }) => {
 };
 
 export default StudentDashboard;
+
+// student dashboard
