@@ -251,3 +251,5 @@ const AdminDegrees = () => {
 export default AdminDegrees;
 
 // degree list with filter
+
+// view classes modal
