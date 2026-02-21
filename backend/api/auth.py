@@ -42,3 +42,5 @@ def login(data: LoginData):
             "user_id": user.id,
             "name": user.name
         }
+
+# /api/auth/login returns JWT token and user role
