@@ -188,3 +188,5 @@ export default StudentEnroll;
 // GET /api/student/enrollable
 
 // faculty select + credit total
+
+// POST /api/student/enroll
