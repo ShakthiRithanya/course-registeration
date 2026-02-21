@@ -256,3 +256,5 @@ if __name__ == "__main__":
 # GET /api/student/profile/{student_id}
 
 # GET /api/student/enrolled/{student_id}
+
+# GET /api/student/enrollable/{student_id}
