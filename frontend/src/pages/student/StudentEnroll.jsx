@@ -113,52 +113,74 @@ const StudentEnroll = ({ user }) => {
                 </motion.div>
             )}
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                {courses.map(course => (
-                    <motion.div
-                        key={course.id}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.99 }}
-                        className={`p-5 rounded-2xl border-2 transition-all cursor-pointer bg-white
-              ${selected[course.id] ? 'border-primary-500 shadow-lg shadow-primary-500/10' : 'border-gray-50 hover:border-gray-200'}
-            `}
-                    >
-                        <div className="flex justify-between items-start mb-4">
-                            <div>
-                                <h4 className="font-bold text-gray-800">{course.name}</h4>
-                                <p className="text-xs text-gray-500">{course.id} | {course.credits} Credits</p>
-                            </div>
-                            <div className="text-right">
-                                <span className="text-xs font-semibold text-gray-400 block mb-1">Seats</span>
-                                <span className={`text-sm font-bold ${course.enrolled_count >= course.max_enroll ? 'text-red-500' : 'text-green-600'}`}>
-                                    {course.enrolled_count}/{course.max_enroll}
-                                </span>
-                            </div>
+            <div className="space-y-8">
+                {Object.entries(
+                    courses.reduce((acc, course) => {
+                        const sem = course.sem || 'Unknown';
+                        if (!acc[sem]) acc[sem] = [];
+                        acc[sem].push(course);
+                        return acc;
+                    }, {})
+                ).sort(([a], [b]) => Number(a) - Number(b)).map(([sem, semesterCourses]) => (
+                    <div key={sem} className="space-y-4">
+                        <div className="flex items-center gap-3">
+                            <span className="w-10 h-10 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center font-bold">
+                                {sem}
+                            </span>
+                            <h3 className="text-xl font-bold text-gray-800">Semester {sem}</h3>
+                            <div className="h-px flex-1 bg-gray-100"></div>
                         </div>
 
-                        <div className="space-y-2">
-                            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Select Faculty</p>
-                            <div className="flex flex-wrap gap-2">
-                                {course.faculties.map(fac => (
-                                    <button
-                                        key={fac.id}
-                                        disabled={course.enrolled_count >= course.max_enroll}
-                                        onClick={(e) => { e.stopPropagation(); toggleCourse(course.id, fac.id); }}
-                                        className={`px-3 py-2 rounded-lg text-xs font-medium border transition-all
-                      ${selected[course.id] === fac.id
-                                                ? 'bg-primary-600 text-white border-primary-600 shadow-md shadow-primary-500/20'
-                                                : 'bg-gray-50 text-gray-600 border-gray-100 hover:bg-gray-100'}
-                      ${course.enrolled_count >= course.max_enroll ? 'opacity-50 cursor-not-allowed' : ''}
-                    `}
-                                    >
-                                        {fac.name}
-                                    </button>
-                                ))}
-                            </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            {semesterCourses.map(course => (
+                                <motion.div
+                                    key={course.id}
+                                    whileHover={{ y: -2 }}
+                                    whileTap={{ scale: 0.99 }}
+                                    className={`p-5 rounded-2xl border-2 transition-all cursor-pointer bg-white
+                                        ${selected[course.id] ? 'border-primary-500 shadow-lg shadow-primary-500/10' : 'border-gray-50 hover:border-gray-200'}
+                                    `}
+                                >
+                                    <div className="flex justify-between items-start mb-4">
+                                        <div>
+                                            <h4 className="font-bold text-gray-800">{course.name}</h4>
+                                            <p className="text-xs text-gray-500">{course.id} | {course.credits} Credits</p>
+                                        </div>
+                                        <div className="text-right">
+                                            <span className="text-xs font-semibold text-gray-400 block mb-1">Seats</span>
+                                            <span className={`text-sm font-bold ${course.enrolled_count >= course.max_enroll ? 'text-red-500' : 'text-green-600'}`}>
+                                                {course.enrolled_count}/{course.max_enroll}
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-2">
+                                        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Select Faculty</p>
+                                        <div className="flex flex-wrap gap-2">
+                                            {course.faculties.map(fac => (
+                                                <button
+                                                    key={fac.id}
+                                                    disabled={course.enrolled_count >= course.max_enroll}
+                                                    onClick={(e) => { e.stopPropagation(); toggleCourse(course.id, fac.id); }}
+                                                    className={`px-3 py-2 rounded-lg text-xs font-medium border transition-all
+                                                        ${selected[course.id] === fac.id
+                                                            ? 'bg-primary-600 text-white border-primary-600 shadow-md shadow-primary-500/20'
+                                                            : 'bg-gray-50 text-gray-600 border-gray-100 hover:bg-gray-100'}
+                                                        ${course.enrolled_count >= course.max_enroll ? 'opacity-50 cursor-not-allowed' : ''}
+                                                    `}
+                                                >
+                                                    {fac.name}
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            ))}
                         </div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
+
 
             <div className="fixed bottom-8 right-8">
                 <button

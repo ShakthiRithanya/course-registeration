@@ -22,33 +22,50 @@ const FacultyCourses = ({ user }) => {
 
     return (
         <div className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {courses.map(course => (
-                    <motion.div
-                        key={course.id}
-                        whileHover={{ y: -4 }}
-                        className="glass-card p-6 rounded-2xl cursor-pointer"
-                        onClick={() => setSelectedCourse(course)}
-                    >
-                        <div className="flex justify-between items-start mb-4">
-                            <div className="p-3 bg-primary-50 text-primary-600 rounded-xl">
-                                <Users className="w-6 h-6" />
-                            </div>
-                            <span className="text-xs font-bold text-gray-400 bg-gray-50 px-2 py-1 rounded">Sem {course.sem}</span>
+            <div className="space-y-8">
+                {Object.entries(
+                    courses.reduce((acc, course) => {
+                        const sem = course.sem || 'Unknown';
+                        if (!acc[sem]) acc[sem] = [];
+                        acc[sem].push(course);
+                        return acc;
+                    }, {})
+                ).sort(([a], [b]) => Number(a) - Number(b)).map(([sem, semesterCourses]) => (
+                    <div key={sem} className="space-y-4">
+                        <div className="flex items-center gap-3">
+                            <h3 className="text-xl font-bold text-gray-800">Semester {sem}</h3>
+                            <div className="h-px flex-1 bg-gray-100"></div>
                         </div>
-                        <h3 className="text-lg font-bold text-gray-800 mb-1">{course.name}</h3>
-                        <p className="text-sm text-gray-500 mb-4">{course.id}</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {semesterCourses.map(course => (
+                                <motion.div
+                                    key={course.id}
+                                    whileHover={{ y: -4 }}
+                                    className="glass-card p-6 rounded-2xl cursor-pointer"
+                                    onClick={() => setSelectedCourse(course)}
+                                >
+                                    <div className="flex justify-between items-start mb-4">
+                                        <div className="p-3 bg-primary-50 text-primary-600 rounded-xl">
+                                            <Users className="w-6 h-6" />
+                                        </div>
+                                    </div>
+                                    <h3 className="text-lg font-bold text-gray-800 mb-1">{course.name}</h3>
+                                    <p className="text-sm text-gray-500 mb-4">{course.id}</p>
 
-                        <div className="flex items-center justify-between pt-4 border-t border-gray-50">
-                            <div>
-                                <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Students</p>
-                                <p className="text-lg font-bold text-gray-700">{course.enrolled_count} / {course.max_enroll}</p>
-                            </div>
-                            <ChevronRight className="w-5 h-5 text-gray-300" />
+                                    <div className="flex items-center justify-between pt-4 border-t border-gray-50">
+                                        <div>
+                                            <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Students</p>
+                                            <p className="text-lg font-bold text-gray-700">{course.enrolled_count} / {course.max_enroll}</p>
+                                        </div>
+                                        <ChevronRight className="w-5 h-5 text-gray-300" />
+                                    </div>
+                                </motion.div>
+                            ))}
                         </div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
+
 
             {/* Student List Modal */}
             <AnimatePresence>

@@ -88,21 +88,38 @@ const StudentEnrolled = ({ user }) => {
                         <CheckCircle2 className="w-5 h-5" />
                         <h3 className="text-xl font-bold">Completed Courses</h3>
                     </div>
-                    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden text-sm">
-                        {/* Simple list or accordion */}
-                        {completed.map(e => (
-                            <div key={e.enrollment_id} className="flex items-center justify-between p-4 hover:bg-gray-50 border-b border-gray-50 last:border-0 transition-colors">
-                                <div>
-                                    <p className="font-semibold text-gray-800">{e.course_name}</p>
-                                    <p className="text-xs text-gray-500">{e.faculty_name} • Sem {e.sem}</p>
+                    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden text-sm divide-y divide-gray-50">
+                        {Object.entries(
+                            completed.reduce((acc, course) => {
+                                const sem = course.sem || 'Unknown';
+                                if (!acc[sem]) acc[sem] = [];
+                                acc[sem].push(course);
+                                return acc;
+                            }, {})
+                        ).sort(([a], [b]) => Number(b) - Number(a)).map(([sem, semesterCourses]) => (
+                            <div key={sem}>
+                                <div className="bg-gray-50/50 px-4 py-2 border-b border-gray-50 flex items-center justify-between">
+                                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Semester {sem}</span>
+                                    <span className="text-[10px] font-bold text-gray-400 capitalize">{semesterCourses.length} Courses</span>
                                 </div>
-                                <div className="text-right">
-                                    <p className="font-bold text-green-600">{e.grade.toFixed(1)} / 4.0</p>
-                                    <p className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Passed</p>
+                                <div className="divide-y divide-gray-50">
+                                    {semesterCourses.map(e => (
+                                        <div key={e.enrollment_id} className="flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+                                            <div>
+                                                <p className="font-semibold text-gray-800">{e.course_name}</p>
+                                                <p className="text-xs text-gray-500">{e.faculty_name}</p>
+                                            </div>
+                                            <div className="text-right">
+                                                <p className="font-bold text-green-600">{e.grade.toFixed(1)} / 4.0</p>
+                                                <p className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Passed</p>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         ))}
                     </div>
+
                 </section>
             )}
         </div>

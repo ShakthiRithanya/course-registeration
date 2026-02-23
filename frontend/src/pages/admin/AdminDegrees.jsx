@@ -107,7 +107,6 @@ const AdminDegrees = () => {
                         className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4"
                         onClick={() => setSelectedDegree(null)}
                     >
-                        {/* ... existing modal ... */}
                         <motion.div
                             initial={{ scale: 0.9, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
@@ -126,25 +125,45 @@ const AdminDegrees = () => {
                             </div>
 
                             <div className="p-6 max-h-[60vh] overflow-y-auto">
-                                <div className="space-y-3">
+                                <div className="space-y-6">
                                     {loadingCourses ? (
                                         <div className="text-center py-12 text-gray-400">Loading courses...</div>
-                                    ) : degreeCourses.map(course => (
-                                        <div key={course.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors">
-                                            <div className="flex items-center gap-4">
-                                                <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm">
-                                                    <BookOpen className="w-5 h-5 text-primary-500" />
+                                    ) : (
+                                        Object.entries(
+                                            degreeCourses.reduce((acc, course) => {
+                                                const sem = course.sem || 'Unknown';
+                                                if (!acc[sem]) acc[sem] = [];
+                                                acc[sem].push(course);
+                                                return acc;
+                                            }, {})
+                                        ).sort(([a], [b]) => Number(a) - Number(b)).map(([sem, courses]) => (
+                                            <div key={sem} className="space-y-3">
+                                                <div className="flex items-center gap-2 px-2 py-1">
+                                                    <div className="h-px flex-1 bg-gray-200"></div>
+                                                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Semester {sem}</span>
+                                                    <div className="h-px flex-1 bg-gray-200"></div>
                                                 </div>
-                                                <div>
-                                                    <p className="font-bold text-gray-800">{course.name}</p>
-                                                    <p className="text-xs text-gray-500">Sem {course.sem} | {course.credits} Credits</p>
+                                                <div className="grid grid-cols-1 gap-3">
+                                                    {courses.map(course => (
+                                                        <div key={course.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors">
+                                                            <div className="flex items-center gap-4">
+                                                                <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm">
+                                                                    <BookOpen className="w-5 h-5 text-primary-500" />
+                                                                </div>
+                                                                <div>
+                                                                    <p className="font-bold text-gray-800">{course.name}</p>
+                                                                    <p className="text-xs text-gray-500">{course.credits} Credits</p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="text-right">
+                                                                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">{course.id}</p>
+                                                            </div>
+                                                        </div>
+                                                    ))}
                                                 </div>
                                             </div>
-                                            <div className="text-right">
-                                                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">{course.id}</p>
-                                            </div>
-                                        </div>
-                                    ))}
+                                        ))
+                                    )}
                                     {!loadingCourses && degreeCourses.length === 0 && (
                                         <div className="text-center py-12 text-gray-400 italic text-sm">No courses found for this degree.</div>
                                     )}
@@ -153,6 +172,7 @@ const AdminDegrees = () => {
                         </motion.div>
                     </motion.div>
                 )}
+
 
                 {/* History Modal */}
                 {showHistoryModal && (
@@ -244,7 +264,7 @@ const AdminDegrees = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </div>
+        </div >
     );
 };
 
