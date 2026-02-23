@@ -63,14 +63,34 @@ def get_enrollable_courses(student_id: str):
         student = session.get(User, student_id)
         if not student: return []
         
-        # Simple logic: courses for their degree and year/sem
-        # In a real app, logic would be more complex.
-        # For mock: Return all courses for B.Tech CSE Year 2 Sem 1
-        statement = select(Course) # In real app filter by degree/sem
+        # Determine Degree ID (mapping back from prefix)
+        dept_prefixes = {
+            "deg_ug_csbs": "CSBS", "deg_ug_aids": "AIDS", "deg_ug_aiml": "AIML",
+            "deg_ug_cse": "CSE", "deg_ug_it": "IT", "deg_ug_cys": "CYS",
+            "deg_ug_ece": "ECE", "deg_ug_mech": "MECH"
+        }
+        prefix_to_deg = {v: k for k, v in dept_prefixes.items()}
+        degree_id = prefix_to_deg.get(student.dept)
+        
+        # Current Semester is Even (Year * 2)
+        current_event_sem = int(student.year) * 2
+        
+        # Get courses for this degree and semester
+        statement = select(Course).where(Course.degree_id == degree_id, Course.sem == current_event_sem)
         courses = session.exec(statement).all()
+        
+        # Get IDs of courses already enrolled/completed
+        handled_stmt = select(Enrollment.course_id).where(
+            Enrollment.student_id == student_id,
+            Enrollment.status.in_(["enrolled", "completed"])
+        )
+        handled_ids = session.exec(handled_stmt).all()
         
         result = []
         for c in courses:
+            if c.id in handled_ids:
+                continue
+                
             # Get faculties for this course
             fac_stmt = select(User).join(FacultyCourse).where(FacultyCourse.course_id == c.id)
             faculties = session.exec(fac_stmt).all()
@@ -80,18 +100,23 @@ def get_enrollable_courses(student_id: str):
                 "name": c.name,
                 "credits": c.credits,
                 "max_enroll": c.max_enroll,
-                "enrolled_count": session.exec(select(func.count(Enrollment.id)).where(Enrollment.course_id == c.id)).one(),
+                "enrolled_count": session.exec(select(func.count(Enrollment.id)).where(Enrollment.course_id == c.id, Enrollment.status == 'enrolled')).one(),
                 "faculties": [{"id": f.id, "name": f.name} for f in faculties]
             })
         return result
 
 @app.post("/api/student/enroll")
 def enroll_student(data: dict):
-    # data: { student_id, selected_courses: [{ course_id, faculty_id }] }
     student_id = data.get("student_id")
     selected = data.get("selected_courses", [])
     
     with Session(engine) as session:
+        student = session.get(User, student_id)
+        if not student:
+            raise HTTPException(status_code=404, detail="Student not found")
+            
+        current_sem = int(student.year) * 2
+        
         # Credit check
         total_credits = 0
         for item in selected:
@@ -107,7 +132,7 @@ def enroll_student(data: dict):
                  student_id=student_id,
                  course_id=item['course_id'],
                  faculty_id=item['faculty_id'],
-                 sem=3, # Mock Sem
+                 sem=current_sem,
                  status="enrolled"
              )
              session.add(new_enroll)

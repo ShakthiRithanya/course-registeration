@@ -39,15 +39,34 @@ def seed_data():
         ]
         for f in faculties: session.add(f)
 
-        # 5 Students
-        students = [
-            User(id="stud_01", role="student", name="Alice Smith", email="alice@college.edu", password_hash=pwd_context.hash("stud123"), dept="CSE", year="UG-2", photo_url="https://api.dicebear.com/7.x/avataaars/svg?seed=Alice"),
-            User(id="stud_02", role="student", name="Bob Jones", email="bob@college.edu", password_hash=pwd_context.hash("stud123"), dept="CSE", year="UG-1", photo_url="https://api.dicebear.com/7.x/avataaars/svg?seed=Bob"),
-            User(id="stud_03", role="student", name="Charlie Brown", email="charlie@college.edu", password_hash=pwd_context.hash("stud123"), dept="AI", year="PG-1", photo_url="https://api.dicebear.com/7.x/avataaars/svg?seed=Charlie"),
-            User(id="stud_04", role="student", name="Diana Prince", email="diana@college.edu", password_hash=pwd_context.hash("stud123"), dept="Systems", year="UG-3", photo_url="https://api.dicebear.com/7.x/avataaars/svg?seed=Diana"),
-            User(id="stud_05", role="student", name="Eve Online", email="eve@college.edu", password_hash=pwd_context.hash("stud123"), dept="CSE", year="UG-2", photo_url="https://api.dicebear.com/7.x/avataaars/svg?seed=Eve"),
-        ]
-        for s in students: session.add(s)
+        # Students
+        dept_prefixes = {
+            "deg_ug_csbs": "CSBS",
+            "deg_ug_aids": "AIDS",
+            "deg_ug_aiml": "AIML",
+            "deg_ug_cse": "CSE",
+            "deg_ug_it": "IT",
+            "deg_ug_cys": "CYS",
+            "deg_ug_ece": "ECE",
+            "deg_ug_mech": "MECH"
+        }
+
+        for deg_id, prefix in dept_prefixes.items():
+            for i in range(1, 17):
+                roll_no = f"{prefix}{i:03d}"
+                year = (i - 1) // 4 + 1
+                student = User(
+                    id=roll_no,
+                    role="student",
+                    name=f"Student {roll_no}",
+                    email=f"{roll_no.lower()}@college.edu",
+                    password_hash=pwd_context.hash("stud123"),
+                    dept=prefix,
+                    year=year,
+                    photo_url=f"https://api.dicebear.com/7.x/avataaars/svg?seed={roll_no}"
+                )
+                session.add(student)
+
 
         # Degrees
         degrees = [
@@ -63,181 +82,169 @@ def seed_data():
         for d in degrees: session.add(d)
 
         # Courses
-        courses = [
-            # CSBS - Semester 1
-            Course(id="24UTA161_CSBS", degree_id="deg_ug_csbs", name="Heritage of Tamils", credits=1, year=1, sem=1),
-            Course(id="24UEN171_CSBS", degree_id="deg_ug_csbs", name="Communicative English for Engineers and Professionals - I", credits=3, year=1, sem=1),
-            Course(id="24UMA161_CSBS", degree_id="deg_ug_csbs", name="Calculus and Matrix Algebra", credits=4, year=1, sem=1),
-            Course(id="24UPY171_CSBS", degree_id="deg_ug_csbs", name="Physics for Engineering and Technology", credits=3, year=1, sem=1),
-            Course(id="24UCH171_CSBS", degree_id="deg_ug_csbs", name="Engineering Chemistry", credits=3, year=1, sem=1),
-            Course(id="24UCS161_CSBS", degree_id="deg_ug_csbs", name="Computational Thinking", credits=3, year=1, sem=1),
-            Course(id="24UCS171_CSBS", degree_id="deg_ug_csbs", name="Python Programming", credits=4, year=1, sem=1),
-            Course(id="24UME266_CSBS", degree_id="deg_ug_csbs", name="Engineering Practices Laboratory", credits=2, year=1, sem=1),
+        # We define courses for all 8 semesters for each degree
+        all_courses = []
+
+        
+        # Helper to add courses
+        seen_ids = set()
+        def add_bulk_courses(degree_id, data):
+            import random
+            for sem, semester_courses in data.items():
+                year = (sem + 1) // 2
+                for code, name, credits in semester_courses:
+                    course_id = f"{code}_{degree_id.split('_')[-1]}"
+                    if course_id in seen_ids:
+                        continue
+                    seen_ids.add(course_id)
+                    course = Course(
+                        id=course_id,
+                        degree_id=degree_id,
+                        name=name,
+                        credits=credits,
+                        year=year,
+                        sem=sem
+                    )
+                    all_courses.append(course)
+                    # Assign a random faculty
+                    faculty = random.choice(faculties)
+                    session.add(FacultyCourse(faculty_id=faculty.id, course_id=course_id))
+
+        # CSBS
+        add_bulk_courses("deg_ug_csbs", {
+            1: [("24UTA161", "Heritage of Tamils", 1), ("24UEN171", "Communicative English I", 3), ("24UMA161", "Calculus and Matrix Algebra", 4), ("24UPY171", "Physics for Engineering", 3), ("24UCH171", "Engineering Chemistry", 3), ("24UCS161", "Computational Thinking", 3), ("24UCS171", "Python Programming", 4), ("24UME266", "Engineering Practices Lab", 2)],
+            2: [("24UTA261", "Tamils and Technology", 1), ("24UMA261", "Statistics and Linear Algebra", 4), ("24UPY271", "Physics for Data Science", 3), ("24UCS271", "Data Structures and Algorithms", 4), ("24UCB261", "Fundamentals of Business Systems", 3), ("24UCB271", "Business Systems Lab", 2)],
+            3: [("24UMA361", "Algebra and Combinatorics", 4), ("24UCS271", "Design and Analysis of Algorithms", 4), ("24UCB311", "Financial Management", 3), ("24UCB312", "Marketing Management", 3), ("24UCS312", "Object Oriented Programming", 4)],
+            4: [("24UMA461", "Probability and Statistics", 4), ("24UCB411", "Business Strategy", 3), ("24UCS412", "Database Management Systems", 4), ("24UCS414", "Operating Systems", 4)],
+            5: [("24UHV501", "Universal Human Values", 2), ("24UCB511", "Enterprise resource planning", 3), ("24UCB512", "E-Commerce", 3), ("24UCS511", "Computer Networks", 4)],
+            6: [("24UCB611", "Cloud Computing for Business", 3), ("24UCB612", "Business Intelligence", 3)],
+            7: [("24UCB711", "Ethics in Business and Tech", 3), ("24UCB712", "Human Resource Management", 3)],
+            8: [("24UCB895", "Project Work", 10)]
+        })
+
+        # AIDS
+        add_bulk_courses("deg_ug_aids", {
+            1: [("24UTA161", "Heritage of Tamils", 1), ("24UEN171", "Communicative English I", 3), ("24UMA161", "Calculus and Matrix Algebra", 4), ("24UPY171", "Physics for Engineering", 3), ("24UCH171", "Engineering Chemistry", 3), ("24UCS161", "Computational Thinking", 3), ("24UCS171", "Python Programming", 4), ("24UME166", "Engineering Graphics", 2)],
+            2: [("24UTA261", "Tamils and Technology", 1), ("24UEN271", "Communicative English II", 3), ("24UMA261", "Statistics and Numerical Methods", 4), ("24UPY261", "Physics for Information Science", 3), ("24UCH261", "Environmental Sciences", 2), ("24UCS271", "Programming in C", 4), ("24UEC272", "Basic Electrical and Electronics", 3), ("24UME266", "Engineering Practices Lab", 2)],
+            3: [("24UMA361", "Algebra and Combinatorics", 4), ("24UEC341", "Digital Principals", 4), ("24UAD302", "Artificial Intelligence", 3), ("24UCS414", "Operating Systems", 4), ("24UAD311", "Foundations of Data Science", 4), ("24UAD312", "OOPS for Data Structures", 3)],
+            4: [("24UMA461", "Probability and Number Theory", 4), ("24UCS511", "Computer Networks", 4), ("24UAD411", "Database Design", 3), ("24UCS301", "Design and Analysis of Algorithms", 4), ("24UAM512", "Machine Learning", 4)],
+            5: [("24UHV501", "Universal Human Values", 2), ("24UAD511", "Deep Learning", 4), ("24UAD512", "Data Exploration", 3), ("24UAD513", "Generative AI", 3)],
+            6: [("24UAD611", "Big Data Analytics", 4), ("24UAD612", "AR and VR", 3)],
+            7: [("24UAD701", "Ethics and AI", 3), ("24UAD711", "Devops", 4)],
+            8: [("24UAD895", "Project Work", 10)]
+        })
+
+        # AIML
+        add_bulk_courses("deg_ug_aiml", {
+            1: [("24UTA161", "Heritage of Tamils", 1), ("24UEN171", "Communicative English I", 3), ("24UMA161", "Calculus and Matrix Algebra", 4), ("24UPY171", "Physics for Engineering", 3), ("24UCH171", "Engineering Chemistry", 3), ("24UCS161", "Computational Thinking", 3), ("24UCS171", "Python Programming", 4), ("24UME266", "Engineering Practices Lab", 2)],
+            2: [("24UTA261", "Tamils and Technology", 1), ("24UEN271", "Communicative English II", 3), ("24UMA261", "Statistics and Numerical Methods", 4), ("24UPY261", "Physics for Information Science", 3), ("24UCH261", "Environmental Sciences", 2), ("24UCS271", "Programming in C", 4), ("24UEC272", "Basic Electrical and Electronics", 3), ("24UME166", "Engineering Graphics", 2)],
+            3: [("24UMA361", "Algebra and Combinatorics", 4), ("24UEC341", "Digital Principles", 4), ("24UAD311", "Foundations of Data Science", 4), ("24UTI311", "Data Structures and Algorithms", 4), ("24UCS312", "Object Oriented Programming", 4), ("24UCS412", "Database Management Systems", 4)],
+            4: [("24UMA463", "Optimization Techniques", 4), ("24UAM411", "Artificial Intelligence", 4), ("24UCB513", "Object Oriented Software Engineering", 3), ("24UCS511", "Computer Networks", 4), ("24UCS414", "Operating Systems", 4)],
+            5: [("24UHV501", "Universal Human Values", 2), ("24UAM511", "Natural Language Processing", 3), ("24UAM512", "Machine Learning", 4), ("24UIT411", "Web Technologies", 3)],
+            6: [("24UAM611", "Deep Learning for Vision", 3), ("24UAD513", "Generative AI", 3)],
+            7: [("24UIT701", "Engineering Economics", 3), ("24UCY512", "Cryptography and Cyber Security", 4)],
+            8: [("24UAM895", "Project Work", 10)]
+        })
+
+        # CSE
+        add_bulk_courses("deg_ug_cse", {
+            1: [("24UTA161", "Heritage of Tamils", 1), ("24UEN171", "Communicative English I", 3), ("24UMA161", "Calculus and Matrix Algebra", 4), ("24UPY171", "Physics for Engineering", 3), ("24UCH171", "Engineering Chemistry", 3), ("24UCS161", "Computational Thinking", 3), ("24UCS171", "Python Programming", 4), ("24UME166", "Engineering Graphics", 2)],
+            2: [("24UTA261", "Tamils and Technology", 1), ("24UEN271", "Communicative English II", 3), ("24UMA261", "Statistics and Numerical Methods", 4), ("24UPY261", "Physics for Information Science", 3), ("24UCH261", "Environmental Sciences", 2), ("24UCS271", "Programming in C", 4), ("24UEC272", "Basic Electrical and Electronics", 3), ("24UME266", "Engineering Practices Lab", 2)],
+            3: [("24UMA361", "Algebra and Combinatorics", 4), ("24UCS301", "Design and Analysis of Algorithms", 4), ("24UCS311", "Data Structures", 4), ("24UCS312", "Object Oriented Programming", 4), ("24UAD311", "Foundations of Data Science", 4), ("24UEC341", "Digital Principles", 4)],
+            4: [("24UMA461", "Probability and Number Theory", 4), ("24UCS401", "Theory of Computation", 4), ("24UCS411", "AI and ML", 4), ("24UCS412", "Database Management Systems", 4), ("24UCS414", "Operating Systems", 4)],
+            5: [("24UHV501", "Universal Human Values", 2), ("24UCS511", "Computer Networks", 4), ("24UCS512", "Internet Programming", 4), ("24UCY512", "Cryptography and Cyber Security", 4)],
+            6: [("24UCS611", "Compiler Design", 3), ("24UCB513", "Object Oriented Software Engineering", 3)],
+            7: [("24UCS701", "Software Project Management", 2), ("24UIT611", "Cloud Computing", 3)],
+            8: [("24UCS895", "Project Work", 10)]
+        })
+
+        # IT
+        add_bulk_courses("deg_ug_it", {
+            1: [("24UTA161", "Heritage of Tamils", 1), ("24UEN171", "Communicative English I", 3), ("24UMA161", "Calculus and Matrix Algebra", 4), ("24UPY171", "Physics for Engineering", 3), ("24UCH171", "Engineering Chemistry", 3), ("24UCS161", "Computational Thinking", 3), ("24UCS171", "Python Programming", 4), ("24UME266", "Engineering Practices Lab", 2)],
+            2: [("24UTA261", "Tamils and Technology", 1), ("24UEN271", "Communicative English II", 3), ("24UMA261", "Statistics and Numerical Methods", 4), ("24UPY261", "Physics for Information Science", 3), ("24UCH261", "Environmental Sciences", 2), ("24UCS271", "Programming in C", 4), ("24UEC272", "Basic Electrical and Electronics", 3), ("24UME166", "Engineering Graphics", 2)],
+            3: [("24UMA361", "Algebra and Combinatorics", 4), ("24UEC341", "Digital Principles", 4), ("24UIT311", "Data Structures and Algorithms", 4), ("24UCS312", "Object Oriented Programming", 4), ("24UCS412", "Database Management Systems", 4), ("24UAD311", "Foundations of Data Science", 4)],
+            4: [("24UMA461", "Probability and Number Theory", 4), ("24UCS401", "Theory of Computation", 4), ("24UIT411", "Web Technologies", 3), ("24UCS414", "Operating Systems", 4), ("24UCS511", "Computer Networks", 4)],
+            5: [("24UHV501", "Universal Human Values", 2), ("24UIT511", "Full Stack Web Development", 4), ("24UIT512", "Embedded Systems and IoT", 3), ("24UCB513", "Object Oriented Software Engineering", 3)],
+            6: [("24UCS411", "AI and Machine Learning", 4), ("24UIT611", "Cloud Computing", 3)],
+            7: [("24UIT701", "Engineering Economics", 3), ("24UCY512", "Cryptography and Cyber Security", 4)],
+            8: [("24UIT895", "Project Work", 10)]
+        })
+
+        # CYS
+        add_bulk_courses("deg_ug_cys", {
+            1: [("24UTA161", "Heritage of Tamils", 1), ("24UEN171", "Communicative English I", 3), ("24UMA161", "Calculus and Matrix Algebra", 4), ("24UPY171", "Physics for Engineering", 3), ("24UCH171", "Engineering Chemistry", 3), ("24UCS161", "Computational Thinking", 3), ("24UCS171", "Python Programming", 4), ("24UME266", "Engineering Practices Lab", 2)],
+            2: [("24UTA261", "Tamils and Technology", 1), ("24UEN271", "Communicative English II", 3), ("24UMA261", "Statistics and Numerical Methods", 4), ("24UPY261", "Physics for Information Science", 3), ("24UCH261", "Environmental Sciences", 2), ("24UCS271", "Programming in C", 4), ("24UEC272", "Basic Electrical and Electronics", 3), ("24UME166", "Engineering Graphics", 2)],
+            3: [("24UMA361", "Algebra and Combinatorics", 4), ("24UEC341", "Digital Principles", 4), ("24UIT311", "Data structures and Algorithms", 4), ("24UCS312", "Object Oriented Programming", 4), ("24UCY311", "Data Science for Cyber Security", 4)],
+            4: [("24UMA463", "Optimization Techniques", 4), ("24UCS511", "Computer Networks", 4), ("24UCY411", "Database Management Systems", 4), ("24UCY412", "Operating Systems", 4), ("24UCS411", "AI and ML", 4)],
+            5: [("24UHV501", "Universal Human Values", 2), ("24UIT411", "Web Technologies", 3), ("24UCY511", "Secure Software Systems", 4), ("24UCY512", "Cryptography and Cyber Security", 4), ("24UCY513", "Secure Coding", 3)],
+            6: [("24UCY611", "Network Security", 4)],
+            7: [("24UIT701", "Engineering Economics", 3), ("24UCY711", "Ethical Hacking", 4)],
+            8: [("24UCY895", "Project Work", 10)]
+        })
+
+        # ECE
+        add_bulk_courses("deg_ug_ece", {
+            1: [("24UTA161", "Heritage of Tamils", 1), ("24UEN171", "Communicative English I", 3), ("24UMA162", "Calculus and Laplace Transforms", 4), ("24UPY171", "Physics for Engineering", 3), ("24UCH172", "Applied Chemistry", 3), ("24UCS161", "Computational Thinking", 3), ("24UCS171", "Python Programming", 4), ("24UME166", "Engineering Graphics", 2)],
+            2: [("24UTA261", "Tamils and Technology", 1), ("24UEN271", "Communicative English II", 3), ("24UMA262", "Complex Variable and ODE", 4), ("24UPY262", "Physics for Electronics Engineering", 3), ("24UCH261", "Environmental Sciences", 2), ("24UCS271", "Programming in C", 4), ("24UEC273", "Circuit Analysis", 3), ("24UME266", "Engineering Practices Lab", 2)],
+            3: [("24UMA362", "Linear Algebra and Numerical Methods", 4), ("24UEC301", "Signals and Systems", 3), ("24UEC302", "Electrical Engineering", 3), ("24UEC311", "Electronic Devices and Circuits", 3), ("24UEC312", "Digital Electronics", 3), ("24UIT311", "Data Structures and Algorithms", 4)],
+            4: [("24UMA462", "Probability and Random Process", 4), ("24UEC401", "Electromagnetic Fields", 3), ("24UEC402", "Control Systems", 3), ("24UEC411", "Analog and Baseband Communication", 3), ("24UEC412", "Transmission Lines and Antennas", 3), ("24UEC413", "Linear and Digital Integrated Circuits", 3)],
+            5: [("24UHV501", "Universal Human Values", 2), ("24UEC511", "Digital Signal Processing", 4), ("24UEC512", "Digital Communication", 3), ("24UEC513", "Microprocessors and Microcontrollers", 4)],
+            6: [("24UEC611", "Digital VLSI Design", 4), ("24UEC612", "RF and Microwave Engineering", 3)],
+            7: [("24UEC701", "Artificial Neural Networks", 3), ("24UEC711", "Wireless Communication", 4)],
+            8: [("24UEC895", "Project Work", 10)]
+        })
+
+        # MECH
+        add_bulk_courses("deg_ug_mech", {
+            1: [("24UTA161", "Heritage of Tamils", 1), ("24UEN171", "Communicative English I", 3), ("24UMA161", "Calculus and Matrix Algebra", 4), ("24UPY172", "Engineering Physics", 3), ("24UCH173", "Materials Chemistry", 3), ("24UCS161", "Computational Thinking", 3), ("24UCS171", "Python Programming", 4), ("24UME266", "Engineering Practices Lab", 2)],
+            2: [("24UTA261", "Tamils and Technology", 1), ("24UEN271", "Communicative English II", 3), ("24UMA261", "Statistics and Numerical Methods", 4), ("24UPY263", "Physics for Mechanical Engineering", 3), ("24UCH261", "Environmental Sciences", 2), ("24UCS271", "Programming in C", 4), ("24UEC271", "Electrical and Instrumentation Engineering", 3), ("24UME166", "Engineering Graphics", 2)],
+            3: [("24UMA363", "Transforms and PDE", 4), ("24UME301", "Engineering Mechanics", 4), ("24UME302", "Engineering Thermodynamics", 4), ("24UME311", "Engineering Materials", 3), ("24UME312", "Fluid Mechanics", 4), ("24UME313", "Manufacturing Processes", 3), ("24UME321", "Machine Drawing", 2)],
+            4: [("24UMA463", "Optimization Techniques", 4), ("24UME411", "Hydraulics and Pneumatics", 3), ("24UME412", "Thermal Engineering", 3), ("24UME413", "Theory of Machines", 3), ("24UME414", "Manufacturing Technology", 3), ("24UME415", "Strength of Materials", 3)],
+            5: [("24UHV501", "Universal Human Values", 2), ("24UME501", "Design of Machine Elements", 3), ("24UME511", "Heat and Mass Transfer", 4), ("24UME512", "Metrology and Measurements", 3), ("24UME521", "CAD/CAM Lab", 2)],
+            6: [("24UME601", "Design of Transmission Systems", 3), ("24UME611", "Finite Element Analysis", 4)],
+            7: [("24UME701", "Economics and Project Management", 3), ("24UME711", "Mechatronics and IoT", 3)],
+            8: [("24UME895", "Project Work", 10)]
+        })
+
+        for c in all_courses: session.add(c)
+        session.flush() # Ensure courses have IDs available if needed
+
+        # Enrollments (History)
+        import random
+        users = session.exec(select(User).where(User.role == "student")).all()
+        for student in users:
+            student_year = int(student.year)
+            # Historic semesters: all semesters before current even semester
+            # Current semester = student_year * 2
+            # Historic semesters = [1, 2, ..., student_year * 2 - 1]
+            historic_sems = list(range(1, student_year * 2))
             
-            # CSBS - Semester 2
-            Course(id="24UTA261_CSBS", degree_id="deg_ug_csbs", name="Tamils and Technology", credits=1, year=1, sem=2),
-            Course(id="24UMA261_CSBS", degree_id="deg_ug_csbs", name="Statistics and Linear Algebra", credits=4, year=1, sem=2),
-            Course(id="24UPY271_CSBS", degree_id="deg_ug_csbs", name="Physics for Data Science", credits=3, year=1, sem=2),
-            Course(id="24UCS271_CSBS", degree_id="deg_ug_csbs", name="Data Structures and Algorithms", credits=4, year=1, sem=2),
-            Course(id="24UCB261_CSBS", degree_id="deg_ug_csbs", name="Fundamentals of Business Systems", credits=3, year=1, sem=2),
-            Course(id="24UCB271_CSBS", degree_id="deg_ug_csbs", name="Business Systems Lab", credits=2, year=1, sem=2),
-
-            # AIDS - Semester 1
-            Course(id="24UTA161_AIDS", degree_id="deg_ug_aids", name="Heritage of Tamils", credits=1, year=1, sem=1),
-            Course(id="24UEN171_AIDS", degree_id="deg_ug_aids", name="Communicative English for Engineers and Professionals - I", credits=3, year=1, sem=1),
-            Course(id="24UMA161_AIDS", degree_id="deg_ug_aids", name="Calculus and Matrix Algebra", credits=4, year=1, sem=1),
-            Course(id="24UPY171_AIDS", degree_id="deg_ug_aids", name="Physics for Engineering and Technology", credits=3, year=1, sem=1),
-            Course(id="24UCH171_AIDS", degree_id="deg_ug_aids", name="Engineering Chemistry", credits=3, year=1, sem=1),
-            Course(id="24UCS161_AIDS", degree_id="deg_ug_aids", name="Computational Thinking", credits=3, year=1, sem=1),
-            Course(id="24UCS171_AIDS", degree_id="deg_ug_aids", name="Python Programming", credits=4, year=1, sem=1),
-            Course(id="24UME166_AIDS", degree_id="deg_ug_aids", name="Engineering Graphics", credits=2, year=1, sem=1),
-
-            # AIDS - Semester 2
-            Course(id="24UTA261_AIDS", degree_id="deg_ug_aids", name="Tamils and Technology", credits=1, year=1, sem=2),
-            Course(id="24UEN271_AIDS", degree_id="deg_ug_aids", name="Communicative English for Engineers and Professionals - II", credits=3, year=1, sem=2),
-            Course(id="24UMA261_AIDS", degree_id="deg_ug_aids", name="Statistics and Numerical Methods", credits=4, year=1, sem=2),
-            Course(id="24UPY261_AIDS", degree_id="deg_ug_aids", name="Physics for Information Science", credits=3, year=1, sem=2),
-            Course(id="24UCH261_AIDS", degree_id="deg_ug_aids", name="Environmental Sciences and Sustainability", credits=2, year=1, sem=2),
-            Course(id="24UCS271_AIDS", degree_id="deg_ug_aids", name="Programming in C", credits=4, year=1, sem=2),
-            Course(id="24UEC272_AIDS", degree_id="deg_ug_aids", name="Basic Electrical and Electronics Engineering", credits=3, year=1, sem=2),
-            Course(id="24UME266_AIDS", degree_id="deg_ug_aids", name="Engineering Practices Laboratory", credits=2, year=1, sem=2),
-            Course(id="24USD296_AIDS", degree_id="deg_ug_aids", name="Skill Development Course", credits=3, year=1, sem=2),
-
-            # AIML - Semester 1
-            Course(id="24UTA161_AIML", degree_id="deg_ug_aiml", name="Heritage of Tamils", credits=1, year=1, sem=1),
-            Course(id="24UEN171_AIML", degree_id="deg_ug_aiml", name="Communicative English for Engineers and Professionals - I", credits=3, year=1, sem=1),
-            Course(id="24UMA161_AIML", degree_id="deg_ug_aiml", name="Calculus and Matrix Algebra", credits=4, year=1, sem=1),
-            Course(id="24UPY171_AIML", degree_id="deg_ug_aiml", name="Physics for Engineering and Technology", credits=3, year=1, sem=1),
-            Course(id="24UCH171_AIML", degree_id="deg_ug_aiml", name="Engineering Chemistry", credits=3, year=1, sem=1),
-            Course(id="24UCS161_AIML", degree_id="deg_ug_aiml", name="Computational Thinking", credits=3, year=1, sem=1),
-            Course(id="24UCS171_AIML", degree_id="deg_ug_aiml", name="Python Programming", credits=4, year=1, sem=1),
-            Course(id="24UME266_AIML", degree_id="deg_ug_aiml", name="Engineering Practices Laboratory", credits=2, year=1, sem=1),
-
-            # AIML - Semester 2
-            Course(id="24UTA261_AIML", degree_id="deg_ug_aiml", name="Tamils and Technology", credits=1, year=1, sem=2),
-            Course(id="24UEN271_AIML", degree_id="deg_ug_aiml", name="Communicative English for Engineers and Professionals - II", credits=3, year=1, sem=2),
-            Course(id="24UMA261_AIML", degree_id="deg_ug_aiml", name="Statistics and Numerical Methods", credits=4, year=1, sem=2),
-            Course(id="24UPY261_AIML", degree_id="deg_ug_aiml", name="Physics for Information Science", credits=3, year=1, sem=2),
-            Course(id="24UCH261_AIML", degree_id="deg_ug_aiml", name="Environmental Sciences and Sustainability", credits=2, year=1, sem=2),
-            Course(id="24UCS271_AIML", degree_id="deg_ug_aiml", name="Programming in C", credits=4, year=1, sem=2),
-            Course(id="24UEC272_AIML", degree_id="deg_ug_aiml", name="Basic Electrical and Electronics Engineering", credits=3, year=1, sem=2),
-            Course(id="24UME166_AIML", degree_id="deg_ug_aiml", name="Engineering Graphics", credits=2, year=1, sem=2),
-            Course(id="24USD296_AIML", degree_id="deg_ug_aiml", name="Skill Development Course", credits=3, year=1, sem=2),
-
-            # CSE - Semester 1
-            Course(id="24UTA161_CSE", degree_id="deg_ug_cse", name="Heritage of Tamils", credits=1, year=1, sem=1),
-            Course(id="24UEN171_CSE", degree_id="deg_ug_cse", name="Communicative English for Engineers and Professionals - I", credits=3, year=1, sem=1),
-            Course(id="24UMA161_CSE", degree_id="deg_ug_cse", name="Calculus and Matrix Algebra", credits=4, year=1, sem=1),
-            Course(id="24UPY171_CSE", degree_id="deg_ug_cse", name="Physics for Engineering and Technology", credits=3, year=1, sem=1),
-            Course(id="24UCH171_CSE", degree_id="deg_ug_cse", name="Engineering Chemistry", credits=3, year=1, sem=1),
-            Course(id="24UCS161_CSE", degree_id="deg_ug_cse", name="Computational Thinking", credits=3, year=1, sem=1),
-            Course(id="24UCS171_CSE", degree_id="deg_ug_cse", name="Python Programming", credits=4, year=1, sem=1),
-            Course(id="24UME166_CSE", degree_id="deg_ug_cse", name="Engineering Graphics", credits=2, year=1, sem=1),
-
-            # CSE - Semester 2
-            Course(id="24UTA261_CSE", degree_id="deg_ug_cse", name="Tamils and Technology", credits=1, year=1, sem=2),
-            Course(id="24UEN271_CSE", degree_id="deg_ug_cse", name="Communicative English for Engineers and Professionals - II", credits=3, year=1, sem=2),
-            Course(id="24UMA261_CSE", degree_id="deg_ug_cse", name="Statistics and Numerical Methods", credits=4, year=1, sem=2),
-            Course(id="24UPY261_CSE", degree_id="deg_ug_cse", name="Physics for Information Science", credits=3, year=1, sem=2),
-            Course(id="24UCH261_CSE", degree_id="deg_ug_cse", name="Environmental Sciences and Sustainability", credits=2, year=1, sem=2),
-            Course(id="24UCS271_CSE", degree_id="deg_ug_cse", name="Programming in C", credits=4, year=1, sem=2),
-            Course(id="24UEC272_CSE", degree_id="deg_ug_cse", name="Basic Electrical and Electronics Engineering", credits=3, year=1, sem=2),
-            Course(id="24UME266_CSE", degree_id="deg_ug_cse", name="Engineering Practices Laboratory", credits=2, year=1, sem=2),
-            Course(id="24USD296_CSE", degree_id="deg_ug_cse", name="Skill Development Course", credits=3, year=1, sem=2),
-
-            # IT - Semester 1
-            Course(id="24UTA161_IT", degree_id="deg_ug_it", name="Heritage of Tamils", credits=1, year=1, sem=1),
-            Course(id="24UEN171_IT", degree_id="deg_ug_it", name="Communicative English for Engineers and Professionals - I", credits=3, year=1, sem=1),
-            Course(id="24UMA161_IT", degree_id="deg_ug_it", name="Calculus and Matrix Algebra", credits=4, year=1, sem=1),
-            Course(id="24UPY171_IT", degree_id="deg_ug_it", name="Physics for Engineering and Technology", credits=3, year=1, sem=1),
-            Course(id="24UCH171_IT", degree_id="deg_ug_it", name="Engineering Chemistry", credits=3, year=1, sem=1),
-            Course(id="24UCS161_IT", degree_id="deg_ug_it", name="Computational Thinking", credits=3, year=1, sem=1),
-            Course(id="24UCS171_IT", degree_id="deg_ug_it", name="Python Programming", credits=4, year=1, sem=1),
-            Course(id="24UME266_IT", degree_id="deg_ug_it", name="Engineering Practices Laboratory", credits=2, year=1, sem=1),
-
-            # IT - Semester 2
-            Course(id="24UTA261_IT", degree_id="deg_ug_it", name="Tamils and Technology", credits=1, year=1, sem=2),
-            Course(id="24UEN271_IT", degree_id="deg_ug_it", name="Communicative English for Engineers and Professionals - II", credits=3, year=1, sem=2),
-            Course(id="24UMA261_IT", degree_id="deg_ug_it", name="Statistics and Numerical Methods", credits=4, year=1, sem=2),
-            Course(id="24UPY261_IT", degree_id="deg_ug_it", name="Physics for Information Science", credits=3, year=1, sem=2),
-            Course(id="24UCH261_IT", degree_id="deg_ug_it", name="Environmental Sciences and Sustainability", credits=2, year=1, sem=2),
-            Course(id="24UCS271_IT", degree_id="deg_ug_it", name="Programming in C", credits=4, year=1, sem=2),
-            Course(id="24UEC272_IT", degree_id="deg_ug_it", name="Basic Electrical and Electronics Engineering", credits=3, year=1, sem=2),
-            Course(id="24UME166_IT", degree_id="deg_ug_it", name="Engineering Graphics", credits=2, year=1, sem=2),
-            Course(id="24USD296_IT", degree_id="deg_ug_it", name="Skill Development Course", credits=3, year=1, sem=2),
-
-            # CYS - Semester 1
-            Course(id="24UTA161_CYS", degree_id="deg_ug_cys", name="Heritage of Tamils", credits=1, year=1, sem=1),
-            Course(id="24UEN171_CYS", degree_id="deg_ug_cys", name="Communicative English for Engineers and Professionals - I", credits=3, year=1, sem=1),
-            Course(id="24UMA161_CYS", degree_id="deg_ug_cys", name="Calculus and Matrix Algebra", credits=4, year=1, sem=1),
-            Course(id="24UPY171_CYS", degree_id="deg_ug_cys", name="Physics for Engineering and Technology", credits=3, year=1, sem=1),
-            Course(id="24UCH171_CYS", degree_id="deg_ug_cys", name="Engineering Chemistry", credits=3, year=1, sem=1),
-            Course(id="24UCS161_CYS", degree_id="deg_ug_cys", name="Computational Thinking", credits=3, year=1, sem=1),
-            Course(id="24UCS171_CYS", degree_id="deg_ug_cys", name="Python Programming", credits=4, year=1, sem=1),
-            Course(id="24UME266_CYS", degree_id="deg_ug_cys", name="Engineering Practices Laboratory", credits=2, year=1, sem=1),
-
-            # CYS - Semester 2
-            Course(id="24UTA261_CYS", degree_id="deg_ug_cys", name="Tamils and Technology", credits=1, year=1, sem=2),
-            Course(id="24UEN271_CYS", degree_id="deg_ug_cys", name="Communicative English for Engineers and Professionals - II", credits=3, year=1, sem=2),
-            Course(id="24UMA261_CYS", degree_id="deg_ug_cys", name="Statistics and Numerical Methods", credits=4, year=1, sem=2),
-            Course(id="24UPY261_CYS", degree_id="deg_ug_cys", name="Physics for Information Science", credits=3, year=1, sem=2),
-            Course(id="24UCH261_CYS", degree_id="deg_ug_cys", name="Environmental Sciences and Sustainability", credits=2, year=1, sem=2),
-            Course(id="24UCS271_CYS", degree_id="deg_ug_cys", name="Programming in C", credits=4, year=1, sem=2),
-            Course(id="24UEC272_CYS", degree_id="deg_ug_cys", name="Basic Electrical and Electronics Engineering", credits=3, year=1, sem=2),
-            Course(id="24UME166_CYS", degree_id="deg_ug_cys", name="Engineering Graphics", credits=2, year=1, sem=2),
-            Course(id="24USD296_CYS", degree_id="deg_ug_cys", name="Skill Development Course", credits=3, year=1, sem=2),
-
-            # ECE - Semester 1
-            Course(id="24UTA161_ECE", degree_id="deg_ug_ece", name="Heritage of Tamils", credits=1, year=1, sem=1),
-            Course(id="24UEN171_ECE", degree_id="deg_ug_ece", name="Communicative English for Engineers and Professionals - I", credits=3, year=1, sem=1),
-            Course(id="24UMA162_ECE", degree_id="deg_ug_ece", name="Calculus and Laplace Transforms", credits=4, year=1, sem=1),
-            Course(id="24UPY171_ECE", degree_id="deg_ug_ece", name="Physics for Engineering and Technology", credits=3, year=1, sem=1),
-            Course(id="24UCH172_ECE", degree_id="deg_ug_ece", name="Applied Chemistry", credits=3, year=1, sem=1),
-            Course(id="24UCS161_ECE", degree_id="deg_ug_ece", name="Computational Thinking", credits=3, year=1, sem=1),
-            Course(id="24UCS171_ECE", degree_id="deg_ug_ece", name="Python Programming", credits=4, year=1, sem=1),
-            Course(id="24UME166_ECE", degree_id="deg_ug_ece", name="Engineering Graphics", credits=2, year=1, sem=1),
-
-            # ECE - Semester 2
-            Course(id="24UTA261_ECE", degree_id="deg_ug_ece", name="Tamils and Technology", credits=1, year=1, sem=2),
-            Course(id="24UEN271_ECE", degree_id="deg_ug_ece", name="Communicative English for Engineers and Professionals - II", credits=3, year=1, sem=2),
-            Course(id="24UMA262_ECE", degree_id="deg_ug_ece", name="Complex Variable and Ordinary Differential Equations", credits=4, year=1, sem=2),
-            Course(id="24UPY262_ECE", degree_id="deg_ug_ece", name="Physics for Electronics Engineering", credits=3, year=1, sem=2),
-            Course(id="24UCH261_ECE", degree_id="deg_ug_ece", name="Environmental Sciences and Sustainability", credits=2, year=1, sem=2),
-            Course(id="24UCS271_ECE", degree_id="deg_ug_ece", name="Programming in C", credits=4, year=1, sem=2),
-            Course(id="24UEC273_ECE", degree_id="deg_ug_ece", name="Circuit Analysis", credits=3, year=1, sem=2),
-            Course(id="24UME266_ECE", degree_id="deg_ug_ece", name="Engineering Practices Laboratory", credits=2, year=1, sem=2),
-            Course(id="24USD296_ECE", degree_id="deg_ug_ece", name="Skill Development Course", credits=3, year=1, sem=2),
-
-            # MECH - Semester 1
-            Course(id="24UTA161_MECH", degree_id="deg_ug_mech", name="Heritage of Tamils", credits=1, year=1, sem=1),
-            Course(id="24UEN171_MECH", degree_id="deg_ug_mech", name="Communicative English for Engineers and Professionals - I", credits=3, year=1, sem=1),
-            Course(id="24UMA161_MECH", degree_id="deg_ug_mech", name="Calculus and Matrix Algebra", credits=4, year=1, sem=1),
-            Course(id="24UPY172_MECH", degree_id="deg_ug_mech", name="Engineering Physics", credits=3, year=1, sem=1),
-            Course(id="24UCH173_MECH", degree_id="deg_ug_mech", name="Materials Chemistry", credits=3, year=1, sem=1),
-            Course(id="24UCS161_MECH", degree_id="deg_ug_mech", name="Computational Thinking", credits=3, year=1, sem=1),
-            Course(id="24UCS171_MECH", degree_id="deg_ug_mech", name="Python Programming", credits=4, year=1, sem=1),
-            Course(id="24UME266_MECH", degree_id="deg_ug_mech", name="Engineering Practices Laboratory", credits=2, year=1, sem=1),
-
-            # MECH - Semester 2
-            Course(id="24UTA261_MECH", degree_id="deg_ug_mech", name="Tamils and Technology", credits=1, year=1, sem=2),
-            Course(id="24UEN271_MECH", degree_id="deg_ug_mech", name="Communicative English for Engineers and Professionals - II", credits=3, year=1, sem=2),
-            Course(id="24UMA261_MECH", degree_id="deg_ug_mech", name="Statistics and Numerical Methods", credits=4, year=1, sem=2),
-            Course(id="24UPY263_MECH", degree_id="deg_ug_mech", name="Physics for Mechanical Engineering", credits=3, year=1, sem=2),
-            Course(id="24UCH261_MECH", degree_id="deg_ug_mech", name="Environmental Sciences and Sustainability", credits=2, year=1, sem=2),
-            Course(id="24UCS271_MECH", degree_id="deg_ug_mech", name="Programming in C", credits=4, year=1, sem=2),
-            Course(id="24UEC271_MECH", degree_id="deg_ug_mech", name="Electrical and Instrumentation Engineering", credits=3, year=1, sem=2),
-            Course(id="24UME166_MECH", degree_id="deg_ug_mech", name="Engineering Graphics", credits=2, year=1, sem=2),
-            Course(id="24USD296_MECH", degree_id="deg_ug_mech", name="Skill Development Course", credits=3, year=1, sem=2),
-        ]
-        for c in courses: session.add(c)
-
-        # Allocation
-        allocations = []
-        for a in allocations: session.add(a)
-
-        # Enrollments
-        enrollments = []
-        for e in enrollments: session.add(e)
+            # Use a deterministic seed per student for reproducible history
+            random.seed(student.id)
+            
+            # Map degree prefixes back to degree IDs
+            prefix_to_deg = {v: k for k, v in dept_prefixes.items()}
+            degree_id = prefix_to_deg.get(student.dept)
+            
+            for s in historic_sems:
+                statement = select(Course).where(Course.degree_id == degree_id, Course.sem == s)
+                sem_courses = session.exec(statement).all()
+                for c in sem_courses:
+                    # Get faculty handling this course
+                    fac_stmt = select(FacultyCourse).where(FacultyCourse.course_id == c.id)
+                    alloc = session.exec(fac_stmt).first()
+                    faculty_id = alloc.faculty_id if alloc else faculties[0].id
+                    
+                    is_backlog = random.random() < 0.1 # 10% backlog rate
+                    enrollment = Enrollment(
+                        student_id=student.id,
+                        course_id=c.id,
+                        faculty_id=faculty_id,
+                        sem=s,
+                        status="backlog" if is_backlog else "completed",
+                        grade=0.0 if is_backlog else round(random.uniform(2.5, 4.0), 1)
+                    )
+                    session.add(enrollment)
         
         session.commit()
 
