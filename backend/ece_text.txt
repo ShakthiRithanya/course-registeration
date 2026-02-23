@@ -1,0 +1,953 @@
+ 
+KGISL INSTITUTE OF TECHNOLOGY: COIMBATORE – 641 035 
+ REGULATIONS 2024 (for students admitted from AY 2024-25) 
+CHOICE BASED CREDIT SYSTEM 
+B.E. ELECTRONICS AND COMMUNICATION ENGINEERING 
+CURRICULUM FOR SEMESTERS I - VIII 
+ 
+ 
+OVERVIEW OF CREDITS 
+ 
+SEMESTER HSMC BSC ESC PCC PEC OEC EEC Total 
+I 4 10 9 - - - - 23 
+II 4 9 9 - - - 3 25 
+III - 4 - 16 - - 2 22 
+IV - 4 - 15 - - 6 25 
+V 2 - - 11 6 - 3 22 
+VI - - - 7 9 3 4 23 
+VII - - - 7 - 3 6 16 
+VIII - - - - - - 10 10 
+TOTAL 10 27 18 56 15 6 34 166 
+% OF CATEGORY 6.0% 16.3% 10.8% 33.7% 9.0% 3.6% 20.5% 100% 
+ 
+CATEGORY OF COURSES 
+ 
+HSMC Humanities Science and Management  Course PEC  Professional Elective Course 
+BSC  Basic Science Course OEC  Open Elective Course 
+ESC  Engineering Science Course EEC  Employability Enhancement Course 
+PCC  Professional Core Course MC  Mandatory Course 
+ 
+TYPE OF COURSES 
+ 
+LIT Laboratory Integrated Theory PCD Personality Character Development 
+T Theory VC Value Added Course 
+L Laboratory Course COT Community Outreach and Intervention through Technical 
+Activities 
+IP Induction Programme IT Industrial Training/ Internship 
+MC Mandatory Course CC Comprehension Course 
+NCC NCC Credit Course PW Project Work 
+ 
+S.No. Category Suggested Breakup of 
+Credits Credits 
+1 Humanities, Social Sciences and Management Courses 
+(HSMC) 10-13 10 
+2 Basic Science Courses (BSC) 23-27 27 
+3 Engineering Science Courses (ESC) 18-22 18 
+4 Professional Core Courses (PCC) 50-62 56 
+5 Professional Elective Courses (PEC) 15-18 15 
+6 Open Elective Courses(OEC) 6 6 
+7 Employability Enhancement Courses(EEC) 30-36 34 
+8 Mandatory Courses (MC) Non Credit Non Credit 
+ Total 165 - 170 166 
+ 
+ 
+ 
+ 
+ 
+SEMESTER – I 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UTA161 தமிழர் மரபு /Heritage of Tamils T 1-0-0 1 1 HSMC 
+2 24UEN171 Communicative English for Engineers 
+and Professionals – I LIT 2-0-2 4 3 HSMC 
+3 24UMA162 Calculus and Laplace Transforms T 3-1-0 4 4 BSC 
+4 24UPY171 Physics for Engineering and 
+Technology LIT 2-0-2 4 3 BSC 
+5 24UCH172 Applied Chemistry LIT 2-0-2 4 3 BSC 
+6 24UCS161 Computational Thinking T 2-1-0 3 3 ESC 
+7 24UCS171 Python Programming LIT 3-0-2 5 4 ESC 
+8 24UME166 Engineering Graphics L 0-0-4 4 2 ESC 
+9 24UPD191 Personality and Character 
+Development PCD - 2 - EEC 
+10 24UIP181 Induction Programme IP - - - MC 
+11 24UMC001 Mandatory Course  I - Yoga and 
+Meditation Fundamentals MC 1-0-0 1 - MC 
+Total Credits 23  
+ 
+ 
+ 
+ 
+ 
+SEMESTER – II 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS 
+CATEGORY 
+L-T-P TCP  
+1 24UTA261 தமிழரும ் ததொழில ் நுட்பமும ் 
+/Tamils and Technology T 1-0-0 1 1 HSMC 
+2 24UEN271 Communicative English for 
+Engineers and Professionals – II LIT 2-0-2 4 3 HSMC 
+3 24UMA262 Complex Variable and Ordinary 
+Differential Equations T 3-1-0 4 4 BSC 
+4 24UPY262 Physics for Electronics Engineering T 3-0-0 3 3 BSC 
+5 24UCH261 Environmental Sciences and 
+Sustainability T 2-0-0 2 2 BSC 
+6 24UCS271 Programming in C LIT 3-0-2 5 4 ESC 
+7 24UEC273 Circuit Analysis LIT 2-0-2 4 3 ESC 
+8 24UME266 Engineering Practices Laboratory L 0-0-4 4 2 ESC 
+9 24USD296 Skill Development Course LIT 2-0-2 4 3 EEC 
+10 24UPD291 Personality and Character 
+Development PCD - 2 - EEC 
+11 24UMC002 Mandatory Course II - Emotional 
+Balance and Mental Wellness MC 1-0-0 1 - MC 
+12 24UNC201 NCC Credit Course Level 1 NCC - - 1 - 
+Total Credits 25  
+ 
+ 
+SEMESTER – III 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMA362 Linear Algebra and Numerical 
+Methods T 3-1-0 4 4 BSC 
+2 24UEC301 Signals and Systems T 3-0-0 3 3 PCC 
+3 24UEC302 Electrical Engineering and 
+Measurements T 3-0-0 3 3 PCC 
+4 24UEC311 Electronic Devices and Circuits LIT 2-0-2 4 3 PCC 
+5 24UEC312 Digital Electronics and System Design LIT 2-0-2 4 3 PCC 
+6 24UIT311 Data Structures and Algorithms LIT 3-0-2 5 4 PCC 
+7  Skill Development Elective – I L 0-0-4 4 2 EEC 
+8 24UPD391 Personality and Character 
+Development PCD - 2 - EEC 
+9 24UVC386 Value Added Course VC - - 2 EEC 
+Total Credits 22  
+ 
+ 
+SEMESTER – IV 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMA462 Probability and Random Process T 3-1-0 4 4 BSC 
+2 24UEC401 Electromagnetic Fields and 
+Waveguides T 3-0-0 3 3 PCC 
+3 24UEC402 Control Systems T 3-0-0 3 3 PCC 
+4 24UEC411 Analog and Baseband 
+Communication LIT 2-0-2 4 3 PCC 
+5 24UEC412 Transmission Lines and Antennas LIT 2-0-2 4 3 PCC 
+6 24UEC413 Linear and Digital Integrated Circuits LIT 2-0-2 4 3 PCC 
+7  Career Progression Elective T 3-0-0 3 3 EEC 
+8  Skill Development Elective – II L 0-0-4 4 2 EEC 
+9 24UCO492 
+Community Outreach and 
+Intervention through Technical 
+Activities 
+COT - 1 1 EEC 
+10 24UPD491 Personality and Character 
+Development PCD - 2 - EEC 
+11 24UVC486 Value Added Course VC - 2 2 EEC 
+12 24UNC401 NCC Credit Course Level 2 NCC - - 2 - 
+Total Credits 25  
+         
+ 
+ 
+ 
+ 
+ 
+ 
+SEMESTER – V 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UHV501 Universal Human Values T 2-0-0 2 2 HSMC 
+2 24UEC511 Digital Signal Processing LIT 3-0-2 5 4 PCC 
+3 24UEC512 Digital Communication LIT 2-0-2 4 3 PCC 
+4 24UEC513 Microprocessors and Microcontrollers LIT 3-0-2 5 4 PCC 
+5  Professional Elective I T/LIT - - 3 PEC 
+6  Professional Elective II T/LIT - - 3 PEC 
+7  Skill Development Elective – III L 0-0-4 4 2 EEC 
+8 24UEC593 Industrial Training/ Internship IT - - 1 EEC 
+9 24UPD591 Personality and Character 
+Development PCD - 2 - EEC 
+10 24UVC586 Value Added Course VC - 2 2 EEC 
+11  Mandatory Course – III MC 2-0-0 2 - MC 
+Total Credits 22  
+ 
+ 
+SEMESTER – VI 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UEC611 Digital VLSI Design LIT 3-0-2 5 4 PCC 
+2 24UEC612 Radio Frequency and 
+Microwave Engineering LIT 2-0-2 4 3 PCC 
+3  Professional Elective – III T/LIT - - 3 PEC 
+4  Professional Elective – IV T/LIT - - 3 PEC 
+5  Professional Elective – V T/LIT - - 3 PEC 
+6  Open Elective – I T/LIT - - 3 OEC 
+7  Skill Development Elective – IV L 0-0-4 4 2 EEC 
+8 24UCO692 
+Community Outreach And 
+Intervention through Technical 
+Activities 
+COT - - 2 EEC 
+9 24UPD691 Personality and Character 
+Development PCD - 2 - EEC 
+10 24UVC686 Value Added Course VC - 2 2 EEC 
+11  Mandatory Course IV MC 2-0-0 2 - MC 
+12 24UNC601 NCC Credit Course Level 3 NCC - - 3 - 
+Total Credits 23  
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SEMESTER – VII 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UEC701 Artificial Neural Networks and Deep 
+Learning T 3-0-0 3 3 PCC 
+2 24UEC711 Wireless Communication and 
+Networks LIT 3-0-2 5 4 PCC 
+3  Open Elective – II T/LIT - - 3 OEC 
+4 24UEC793 Industrial Training / Internship IT - - 2 EEC 
+5 24UEC794 Comprehension Course CC 2-0-0 2 2 EEC 
+6 24UEC795 Mini Project PW 0-0-4 4 2 EEC 
+7 24UVC786 Value Added Course VC - 2 2 EEC 
+Total Credits 16  
+ 
+SEMESTER – VIII 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UEC895 Project Work PW 0-0-20 20 10 EEC 
+Total Credits 10  
+ 
+MANDATORY COURSES 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CATEGORY 
+L-T-P TCP 
+1 24UMC001 Yoga and Meditation Fundamentals T 1-0-0 1 MC 
+2 24UMC002 Emotional Balance and Mental 
+Wellness T 1-0-0 1 MC 
+3 24UMC003 Ethical behavior and code of conduct 
+for Engineers T 2-0-0 2 MC 
+4 24UMC004 Disaster Management T 2-0-0 2 MC 
+5 24UMC005 Indian Constitution and Knowledge 
+System T 2-0-0 2 MC 
+6 24UMC006 Ergonomics and Industrial Safety T 2-0-0 2 MC 
+7 24UMC007 Introduction to Women and Gender 
+Studies T 2-0-0 2 MC 
+ 
+CAREER PROGRESSION 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UCPE11 Entrepreneurship Development T 3-0-0 3 3 EEC 
+2 24UCPE12 Research Methodology T 3-0-0 3 3 EEC 
+3 24UCPE13 Career Development Course T 3-0-0 3 3 EEC 
+ 
+ 
+ 
+ 
+PROFESSIONAL ELECTIVE COURSES (PEC) 
+VERTICAL 1: SEMICONDUCTOR CHIP DESIGN 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UECP01 Low Power IC Design T 3-0-0 3 3 PEC 
+2 24UECP02 VLSI Testing and Design For 
+Testability T 3-0-0 3 3 PEC 
+3 24UECP03 Mixed Signal IC Design Testing T 3-0-0 3 3 PEC 
+4 24UECP04 System on Chip Design T 3-0-0 3 3 PEC 
+5 24UECP05 Analog IC Design T 3-0-0 3 3 PEC 
+6 24UECP06 Digital IC Design T 3-0-0 3 3 PEC 
+7 24UECP07 ASIC Design T 3-0-0 3 3 PEC 
+8 24UECP08 CAD for VLSI T 3-0-0 3 3 PEC 
+9 24UECP09 Introduction to Nano Electronics T 3-0-0 3 3 PEC 
+10 24UECP10 Advanced Digital System Design T 3-0-0 3 3 PEC 
+ 
+ 
+VERTICAL 2: SIGNAL AND IMAGE PROCESSING 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UECP11 Image Processing T 3-0-0 3 3 PEC 
+2 24UECP12 Digital Speech Processing T 3-0-0 3 3 PEC 
+3 24UECP13 Advanced Digital Signal Processing T 3-0-0 3 3 PEC 
+4 24UECP14 Neural Networks T 3-0-0 3 3 PEC 
+5 24UECP15 DSP Integrated Circuits T 3-0-0 3 3 PEC 
+6 24UECP16 Multimedia Compression Techniques T 3-0-0 3 3 PEC 
+7 24UECP17 Introduction to Computer Vision  T 3-0-0 3 3 PEC 
+8 24UECP18 Pattern Recognition T 3-0-0 3 3 PEC 
+9 24UECP19 Soft Computing and its Applications T 3-0-0 3 3 PEC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+VERTICAL 3: SENSOR TECHNOLOGIES AND IOT 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UECP20 IoT Processors T 3-0-0 3 3 PEC 
+2 24UECP21 IoT Based System Design T 3-0-0 3 3 PEC 
+3 24UECP22 Embedded Systems and IoT Design LIT 2-0-2 4 3 PEC 
+4 24UECP23 Industrial IoT and Industry 4.0 T 3-0-0 3 3 PEC 
+5 24UECP24 MEMS Design T 3-0-0 3 3 PEC 
+6 24UECP25 Sensors Actuators and Interface 
+Electronics T 3-0-0 3 3 PEC 
+7 24UECP26 Adhoc and Wireless Sensor Network T 3-0-0 3 3 PEC 
+8 24UECP27 IoT Protocols and Industrial Sensors T 3-0-0 3 3 PEC 
+9 24UECP28 AI Integrated Processors T 3-0-0 3 3 PEC 
+10 24UECP29 Embedded Automotive Systems T 3-0-0 3 3 PEC 
+ 
+ 
+VERTICAL 4: RF AND SPACE TECHNOLOGIES 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UECP30 Satellite Communication T 3-0-0 3 3 PEC 
+2 24UECP31 RF Systems and Antenna Design T 3-0-0 3 3 PEC 
+3 24UECP32 5G Mobile Communication and 
+Networks T 3-0-0 3 3 PEC 
+4 24UECP33 Smart Antennas T 3-0-0 3 3 PEC 
+5 24UECP34 Remote Sensing T 3-0-0 3 3 PEC 
+6 24UECP35 Avionics Systems T 3-0-0 3 3 PEC 
+7 24UECP36 Cognitive Radio Communication T 3-0-0 3 3 PEC 
+8 24UECP37 Radar Technologies T 3-0-0 3 3 PEC 
+9 24UECP38 Millimeter Wave and Microwave 
+Communication T 3-0-0 3 3 PEC 
+10 24UECP39 Radio Frequency Engineering T 3-0-0 3 3 PEC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+VERTICAL 5: HIGH SPEED COMMUNICATION 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UECP40 Wireless Broadband Networks T 3-0-0 3 3 PEC 
+2 24UECP41 High Performance Communication 
+Networks T 3-0-0 3 3 PEC 
+3 24UECP42 Software Defined Radio Networks T 3-0-0 3 3 PEC 
+4 24UECP43 Massive MIMO Networks T 3-0-0 3 3 PEC 
+5 24UECP44 Advanced Wireless Communication 
+Techniques T 3-0-0 3 3 PEC 
+6 24UECP45 Molecular Communication T 3-0-0 3 3 PEC 
+7 24UECP46 Optical Communication and Networks T 3-0-0 3 3 PEC 
+8 24UECP47 Wireless Networks T 3-0-0 3 3 PEC 
+9 24UECP48 Optoelectronics T 3-0-0 3 3 PEC 
+ 
+ 
+VERTICAL 6: EMERGING TECHNOLOGIES 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / 
+WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UECP49 Wearable Devices T 3-0-0 3 3 PEC 
+2 24UECP50 Medical Imaging Systems T 3-0-0 3 3 PEC 
+3 24UECP51 Brain Computer Interface and 
+Applications T 3-0-0 3 3 PEC 
+4 24UECP52 Body Area Networks T 3-0-0 3 3 PEC 
+5 24UECP53 Underwater Navigation Systems T 3-0-0 3 3 PEC 
+6 24UECP54 Robotics and Automation T 3-0-0 3 3 PEC 
+7 24UECP55 Ocean Observation Systems T 3-0-0 3 3 PEC 
+8 24UECP56 Bio-inspired Computing T 3-0-0 3 3 PEC 
+9 24UECP57 Medical IoT T 3-0-0 3 3 PEC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+OPEN ELECTIVES 
+ 
+B. TECH. ARTIFICIAL INTELLIGENCE AND DATA SCIENCE 
+S.NO. COURSE 
+CODE 
+COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK  
+CREDITS L-T-P TCP 
+1 24UADO01 Introduction to Artificial Intelligence and Machine 
+Learning T 3-0-0 3 3 
+2 24UADO02 Introduction to Data Science T 3-0-0 3 3 
+3 24UADO03 Introduction to Big Data Analytics T 3-0-0 3 3 
+4 24UADO04 Data Visualization Techniques T 3-0-0 3 3 
+5 24UADO05 Introduction to Devops Tools T 3-0-0 3 3 
+6 24UADO06 Fundamentals of Storage Technologies T 3-0-0 3 3 
+7 24UADO07 Basics of Cloud Services T 3-0-0 3 3 
+ 
+ 
+ 
+ 
+B.E. CSE (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)  
+ 
+ 
+B. TECH. COMPUTER SCIENCE AND BUSINESS SYSTEMS 
+S.NO. COURSE 
+CODE 
+ 
+COURSE TITLE 
+COURSE 
+TYPE 
+PERIODS /  WEEK  
+CREDITS L-T-P TCP 
+1. 24UCBO01 Modern Web Applications T 3-0-0 3 3 
+2. 24UCBO02 Applied Design Thinking T 3-0-0 3 3 
+3. 24UCBO03 Human Computer Interaction T 3-0-0 3 3 
+4. 24UCBO04 Social Information Network T 3-0-0 3 3 
+5. 24UCBO05 Artificial Intelligence and Expert Systems T 3-0-0 3 3 
+6. 24UCBO06 Usability Design of Software Applications T 3-0-0 3 3 
+7. 24UCBO07 Data Mining and Analytics T 3-0-0 3 3 
+ 
+ 
+ 
+S.NO. COURSE 
+CODE 
+ 
+COURSE TITLE 
+COURSE 
+TYPE 
+PERIODS / WEEK  
+CREDITS L-T-P TCP 
+1 24UAMO01 Fundamentals of Artificial Intelligence T 3-0-0 3 3 
+2 24UAMO02 Principles of Machine Learning T 3-0-0 3 3 
+3 24UAMO03 Fundamentals of Deep Learning LIT 2-0-2 4 3 
+4 24UAMO04 Virtualization and Container Technologies LIT 2-0-2 4 3 
+5 24UAMO05 Python Frameworks for Web Applications LIT 2-0-2 4 3 
+6 24UAMO06 Fundamentals of Natural Language 
+Processing 
+T 3-0-0 3 3 
+7 24UAMO07 AI for Mechanical Engineering T 3-0-0 3 3 
+8 24UAMO08 AI for food processing T 3-0-0 3 3 
+9 24UAMO09 AI for Game Development T 3-0-0 3 3 
+ 
+B.E COMPUTER SCIENCE AND ENGINEERING 
+ 
+S.NO. COURSE 
+CODE 
+ 
+COURSE TITLE 
+COURSE 
+TYPE 
+PERIODS / 
+WEEK  
+CREDITS L-T-P TCP 
+1 24UCSO01 Fundamentals of Data Structures LIT 2-0-2 4 3 
+2 24UCSO02 Principles of Computer Networks  LIT 2-0-2 4 3 
+3 24UCSO03 Video Creation and Editing  LIT 2-0-2 4 3 
+4 24UCSO04 Fundamentals of Database Systems  LIT 2-0-2 4 3 
+5 24UCSO05 Basics of Web Development  LIT 2-0-2 4 3 
+6 24UCSO06 Introduction to Digital Currency  T 3-0-0 3 3 
+ 
+ 
+ 
+ 
+ 
+B.E. COMPUTER SCIENCE AND ENGINEERING (CYBER SECURITY) 
+ 
+S.NO. COURSE 
+CODE 
+ 
+COURSE TITLE 
+COURSE 
+TYPE 
+PERIODS / 
+WEEK  
+CREDITS L-T-P TCP 
+1.  24UCYO01 Cybersecurity Fundamentals T 3-0-0 3 3 
+2.  24UCYO02 Information Security Management T 3-0-0 3 3 
+3.  24UCYO03 Incident Response and Forensics T 3-0-0 3 3 
+4.  24UCYO04 Cyber Law and Ethics T 3-0-0 3 3 
+5.  24UCYO05 Security Operations T 3-0-0 3 3 
+6.  24UCYO06 Introduction to Open Source Intelligence. T 3-0-0 3 3 
+ 
+ 
+ 
+ 
+B.Tech.  INFORMATION TECHNOLOGY 
+ 
+S.NO COURSE 
+CODE 
+ 
+COURSE TITLE 
+COURSE 
+TYPE 
+PERIODS/ WEEK 
+CREDITS L-T-P TCP 
+ 
+1. 24UITO01 Functional Programming T 3-0-0 3 3 
+2. 24UITO02 Fundamentals of Cryptography T 3-0-0 3 3 
+3. 24UITO03 Software Engineering T 3-0-0 3 3 
+4. 24UITO04 Concepts of Object Oriented Programming LIT 2-0-2 4 3 
+5. 24UITO05 Fundamentals of Computer Vision T 3-0-0 3 3 
+6. 24UITO06 Foundations of Block chain T 3-0-0 3 3 
+7. 24UITO07 Game Theory and Mechanism Design T 3-0-0 3 3 
+ 
+ 
+ 
+ 
+B.E. MECHANICAL ENGINEERING 
+ 
+S.NO COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS 
+L-T-P TCP 
+1 24UMEO01 Fundamentals of Additive Manufacturing T 3-0-0 3 3 
+2 24UMEO02 Renewable Energy Systems T 3-0-0 3 3 
+3 24UMEO03 Principles of Safety Management T 3-0-0 3 3 
+4 24UMEO04 Introduction to Mechatronics Systems T 3-0-0 3 3 
+5 24UMEO05 Product Design and Development T 3-0-0 3 3 
+6 24UMEO06 Fundamentals of Electrical Vehicle 
+Technology T 3-0-0 3 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Guidelines for choosing Courses under PEC 
+ 
+ 
+CLUSTE
+R 
+PEC- I PEC- II PEC- III PEC- IV PEC- V 
+ RF AND 
+SPACE 
+TECHNOLOGIE
+S 
+HIGH SPEED 
+COMMUNICATIO
+N 
+SEMICONDUCTO
+R CHIP DESIGN 
+SIGNAL 
+AND IMAGE 
+PROCESSIN
+G 
+SENSOR 
+TECHNOLOGIE
+S AND IOT 
+EMERGING 
+TECHNOLOGIE
+S 
+ 
+ 
+ 
+ 
+ 
+ 
+Cluster A 
+24UECP30 
+Satellite 
+Communication 
+24UECP40 
+Wireless 
+Broadband 
+Networks 
+24UECP01 
+Low Power IC 
+Design 
+24UECP11 
+Image 
+Processing 
+24UECP20 
+IoT Processors 
+24UECP50 
+Medical Imaging 
+Systems 
+24UECP32 
+5G Mobile 
+Communication 
+and Networks 
+24UECP41 
+High Performance 
+Communication 
+Networks 
+24UECP03 
+Mixed Signal IC 
+Design Testing 
+24UECP12 
+Digital 
+Speech 
+Processing 
+24UECP21 
+IoT Based 
+System Design 
+24UECP57 
+Medical IoT 
+24UECP36 
+Cognitive Radio 
+Communication 
+24UECP42 
+Software Defined 
+Radio Networks 
+ 24UECP13 
+Advanced 
+Digital Signal 
+Processing 
+24UECP22 
+Embedded 
+Systems and 
+IoT Design 
+24UECP52 
+Body Area 
+Networks 
+24UECP38 
+Millimeter Wave 
+and Microwave 
+Communication 
+24UECP43 
+Massive MIMO 
+Networks 
+ 
+  24UECP54 
+Robotics and 
+Automation 
+Cluster B 
+24UECP31 
+RF Systems and 
+Antenna Design 
+24UECP44 
+Advanced 
+Wireless 
+Communication 
+Techniques 
+24UECP04 
+System on Chip 
+Design 
+24UECP15 
+DSP 
+Integrated 
+Circuits 
+24UECP23 
+Industrial IoT 
+and Industry 4.0 
+24UECP53 
+Underwater 
+Navigation 
+Systems 
+24UECP33 
+Smart Antennas 
+24UECP45 
+Molecular 
+Communication 
+24UECP05 
+Analog IC Design 
+24UECP16 
+Multimedia 
+Compression 
+Techniques 
+24UECP24 
+MEMS Design 
+24UECP55 
+Ocean 
+Observation 
+Systems 
+24UECP39 
+Radio 
+Frequency 
+Engineering 
+ 
+24UECP06 
+Digital IC Design  
+24UECP25 
+Sensors 
+Actuators and 
+Interface 
+Electronics 
+ 
+ 
+ 
+24UECP07 
+ASIC Design 
+ 24UECP26 
+Adhoc and 
+Wireless Sensor 
+Network 
+ 
+Cluster  
+C 24UECP35 
+Avionics 
+Systems 
+24UECP46 
+Optical 
+Communication 
+and Networks 
+24UECP02 
+VLSI Testing and 
+Design For 
+Testability 
+24UECP14 
+Neural 
+Networks 
+24UECP27 
+IoT Protocols 
+and Industrial 
+Sensors 
+24UECP56 
+Bio-inspired 
+Computing 
+24UECP37 
+Radar 
+Technologies 
+24UECP47 
+Wireless 
+Networks 
+24UECP08 
+CAD for VLSI 
+24UECP17 
+Introduction 
+to Computer 
+Vision 
+AI Integrated 
+Processors 
+24UECP51 
+Brain Computer 
+Interface and 
+Applications 
+Cluster D  24UECP48 
+Optoelectronics 24UECP09 24UECP18 
+Pattern 
+24UECP29 
+Embedded 
+24UECP49 
+Wearable 
+ 
+Introduction to 
+Nano Electronics 
+Recognition Automotive 
+Systems 
+Devices 
+Cluster E 
+24UECP34 
+Remote Sensing  
+24UECP10 
+Advanced Digital 
+System Design 
+24UECP19 
+Soft 
+Computing 
+and its 
+Applications 
+ 
+ 
+Pre-
+requisite 
+Courses  
+24UEC411 
+Analog and 
+Baseband 
+Communication 
+ 
+24UEC311 
+Electronic Devices 
+and Circuits 
+24UEC301 
+Signals and 
+Systems 
+24UEC513 
+Microprocessors 
+and 
+Microcontrollers 
+ 
+24UEC412 
+Transmission 
+Lines and 
+Antennas 
+ 
+24UEC312 
+Digital Electronics 
+and System 
+Design 
+24UEC511 
+Digital Signal 
+Processing 
+  
+  
+ 
+24UEC413 
+Linear and Digital 
+Integrated Circuits 
+   
+ 
+ 
+Criteria for Choosing Courses  for  Professional  Electives  
+ 
+PEC – I :  Any course from any cluster is fine  
+PEC - II :  Any course from any cluster is fine  
+PEC - III : Any course from any cluster is fine 
+PEC - IV: Any course from any cluster is fine 
+PEC - V:  Any course from any cluster is fine  
+ 
+Open elective -  Course Preferences list   
+S.No Departments Course Preference  
+1 AI & DS 24UADO01 to 24UADO07 
+2 AI & ML 24UAMO01 to 24UAMO06, 24UAMO08, 24UAMO09 
+3 CSBS 24UCBO01 to 24UCBO07 
+4 CSE 24UCSO01 to 24UCSO06 
+5 CYS 24UCYO01 to 24UCYO06 
+6 IT 24UITO01 to 24UITO07 
+7 Mechanical  24UMEO02, 24UMEO06 
+ 
+ 
+ 

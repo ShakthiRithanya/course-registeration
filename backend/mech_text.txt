@@ -1,0 +1,912 @@
+ 
+KGISL INSTITUTE OF TECHNOLOGY: COIMBATORE – 641 035 
+ REGULATIONS 2024 (for students admitted from AY2024-25) 
+CHOICE BASED CREDIT SYSTEM 
+B.E. MECHANICAL ENGINEERING 
+CURRICULUM FOR SEMESTERS I - VIII 
+ 
+OVERVIEW OF CREDITS 
+ 
+SEMESTER HSMC BSC ESC PCC PEC OEC EEC TOTAL 
+I 4 10 9     23 
+II 4 9 9    3 25 
+III  4  20   2 26 
+IV  4  15   6 25 
+V 2   12 6  3 23 
+VI    7 9 3 4 23 
+VII 3   3  3 6 15 
+VIII       10 10 
+TOTAL 13 27 18 57 15 6 34 170 
+% OF CATEGORY 7.6 % 15.9 % 10.6 % 33.5 % 8.8 % 3.5 % 20 % 100 % 
+ 
+CATEGORY OF COURSES 
+HSMC Humanities Science and Management Course PEC Professional Elective Course 
+BSC Basic Science Course OEC Open Elective Course 
+ESC Engineering Science Course EEC Employability Enhancement Course 
+PCC Professional Core Course MC Mandatory Course 
+TYPE OF COURSES 
+LIT Laboratory Integrated Theory PCD Personality Character Development 
+T Theory VC Value Added Course 
+L Laboratory Course COT Community Outreach and Intervention through Technical Activities 
+IP Induction Programme IT Industrial Training/ Internship 
+MC Mandatory Course CC Comprehension Course 
+NCC NCC Credit Course PW Project Work 
+CREDIT ALLOCATION
+S.No. Category Suggested Breakup of 
+Credits Credits 
+1 Humanities, Social Sciences and Management Courses 
+(HSMC) 10-13* 13 
+2 Basic Science Courses (BSC) 23 – 27* 27 
+3 Engineering Science Courses (ESC) 18 - 22* 18 
+4 Professional Core Courses (PCC) 50-62* 57 
+5 Professional Elective Courses (PEC) 15-18* 15 
+6 Open Elective Courses (OEC) 6* 6 
+7 Employability Enhancement Courses (EEC) 30-36* 34 
+8 Mandatory Courses (MC) Non Credit Non Credit 
+ Total 165 - 170* 170 
+  
+ 
+ 
+SEMESTER – I 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY 
+L-T-P TCP* 
+1 24UTA161 தமிழர் மரபு / Heritage of Tamils T 1-0-0 1 1 HSMC 
+2 24UEN171 Communicative English for Engineers and 
+Professionals - I LIT 2-0-2 4 3 HSMC 
+3 24UMA161 Calculus and Matrix Algebra T 3-1-0 4 4 BSC 
+4 24UPY172 Engineering Physics LIT 2-0-2 4 3 BSC 
+5 24UCH173 Materials Chemistry LIT 2-0-2 4 3 BSC 
+6 24UCS161 Computational Thinking T 2-1-0 3 3 ESC 
+7 24UCS171 Python Programming LIT 3-0-2 5 4 ESC 
+8 24UME266 Engineering Practices Laboratory L 0-0-4 4 2 ESC 
+9 24UPD191 Personality and Character Development PCD - 2 - EEC 
+10 24UIP181 Induction Programme IP - - - MC 
+11 24UMC001 Mandatory Course  I -  Yoga and Meditation 
+Fundamentals MC 1-0-0 1 - MC 
+Total Credits 23  
+ 
+SEMESTER – II 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UTA261 தமிழரும ் ததொழில ் நுட்பமும ் / Tamils 
+and Technology T 1-0-0 1 1 HSMC 
+2 24UEN271 Communicative English for Engineers and 
+Professionals - II LIT 2-0-2 4 3 HSMC 
+3 24UMA261 Statistics and Numerical Methods T 3-1-0 4 4 BSC 
+4 24UPY263 Physics for Mechanical Engineering T 3-0-0 3 3 BSC 
+5 24UCH261 Environmental Sciences and Sustainability T 2-0-0 2 2 BSC 
+6 24UCS271 Programming in C LIT 2-0-4 6 4 ESC 
+7 24UEC271 Electrical and Instrumentation Engineering LIT 2-0-2 4 3 ESC 
+8 24UME166 Engineering Graphics L 0-0-4 4 2 ESC 
+9 24USD296 Skill Development Course LIT 2-0-2 4 3 EEC 
+10 24UPD291 Personality and Character Development PCD - 2 - EEC 
+11 24UMC002 Mandatory Course II – Emotional Balance 
+and Mental Wellness MC 1-0-0 1 - MC 
+12 24UNC201 NCC Credit Course Level 1 NCC - - 1 - 
+Total Credits 25  
+ 
+ 
+ 
+SEMESTER – III 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMA363 Transforms and Partial Differential Equations T 3-1-0 4 4 BSC 
+2 24UME301 Engineering Mechanics T 3-1-0 4 4 PCC 
+3 24UME302 Engineering Thermodynamics T 3-1-0 4 4 PCC 
+4 24UME311 Engineering Materials and Metallurgy LIT 2-0-2 4 3 PCC 
+5 24UME312 Fluid Mechanics and Machinery LIT 3-0-2 5 4 PCC 
+6 24UME313 Manufacturing Processes LIT 2-0-2 4 3 PCC 
+7 24UME321 Computer Aided Machine Drawing L 0-0-4 4 2 PCC 
+8  Skill Development Elective I L 0-0-4 4 2 EEC 
+9 24UPD391 Personality and Character Development PCD - 2 - EEC 
+10 24UVC386 Value Added Course VC - - 2 EEC 
+Total Credits 26  
+ 
+SEMESTER – IV 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMA463 Optimization Techniques T 3-1-0 4 4 BSC 
+2 24UME411 Hydraulics and Pneumatics LIT 2-0-2 4 3 PCC 
+3 24UME412 Thermal Engineering LIT 2-0-2 4 3 PCC 
+4 24UME413 Theory of Machines LIT 2-0-2 4 3 PCC 
+5 24UME414 Manufacturing Technology LIT 2-0-2 4 3 PCC 
+6 24UME415 Strength of Materials LIT 2-0-2 4 3 PCC 
+7  Career Progression Elective T 3-0-0 3 3 EEC 
+8  Skill Development Elective II L 0-0-4 4 2 EEC 
+9 24UPD491 Personality and Character Development PCD - 2 - EEC 
+10 24UCO492 Community Outreach And Intervention 
+through Technical Activities COT - 1 1 EEC 
+11 24UVC486 Value Added Course VC - - 2 EEC 
+12 24UNC401 NCC Credit Course Level 2 NCC - - 2 - 
+Total Credits 25  
+ 
+ 
+ 
+ 
+ 
+ 
+SEMESTER - V 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UHV501 Universal Human Values T 2-0-0 2 2 HSMC 
+2 24UME501 Design of Machine Elements T 3-0-0 3 3 PCC 
+3 24UME511 Heat and Mass Transfer LIT 3-0-2 5 4 PCC 
+4 24UME512 Metrology and Measurements LIT 2-0-2 4 3 PCC 
+5 24UME521 CAD / CAM Laboratory L 0-0-4 4 2 PCC 
+6  Professional Elective I T / LIT - - 3 PEC 
+7  Professional Elective II T / LIT - - 3 PEC 
+8  Skill Development Elective III L 0-0-4 4 2 EEC 
+9 24UME593 Industrial Training/ Internship IT - - 1 EEC 
+10 24UPD591 Personality and Character Development PCD - 2 - EEC 
+11 24UVC586 Value Added Course VC - - 2 EEC 
+12  Mandatory Course III MC 2-0-0 2 - MC 
+Total Credits 23  
+ 
+SEMESTER – VI 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UME601 Design of Transmission Systems T 3-0-0 3 3 PCC 
+2 24UME611 Finite Element Analysis LIT 3-0-2 5 4 PCC 
+3  Professional Elective III T / LIT - - 3 PEC 
+4  Professional Elective IV T / LIT - - 3 PEC 
+5  Professional Elective V T / LIT - - 3 PEC 
+6  Open Elective I T / LIT - - 3 OEC 
+7  Skill Development Elective IV L 0-0-4 4 2 EEC 
+8 24UPD691 Personality and Character Development PCD - 2 - EEC 
+9 24UCO692 Community Outreach And Intervention 
+through Technical Activities COT - - 2 EEC 
+10 24UVC686 Value Added Course VC - - 2 EEC 
+11  Mandatory Course IV MC 2-0-0 2 - MC 
+12 24UNC601 NCC Credit Couse Level 3 NCC - - 3 - 
+Total Credits 23  
+ 
+ 
+SEMESTER – VII 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UME701 Economics and Project Management T 3-0-0 3 3 HSMC 
+2 24UME711 Mechatronics and IoT LIT 2-0-2 4 3 PCC 
+3  Open Elective II T / LIT - - 3 OEC 
+4 24UME793 Industrial Training / Internship IT - - 2 EEC 
+5 24UME794 Comprehension Course CC 2-0-0 2 2 EEC 
+6 24UME795 Mini Project PW 0-0-4 4 2 EEC 
+7 24UVC786 Value Added Course VC - - 2 EEC 
+Total Credits 15  
+ 
+SEMESTER – VIII 
+S. 
+NO 
+COURSE 
+CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UME895 Project Work PW 0-0-20 20 10 EEC 
+Total Credits 10  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MANDATORY COURSES 
+ 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CATEGORY 
+L-T-P TCP 
+1 24UMC001 Yoga and Meditation Fundamentals T 1-0-0 1 MC 
+2 24UMC002 Emotional Balance and Mental Wellbeing T 1-0-0 1 MC 
+3 24UMC003 Ethical behavior and code of conduct for 
+Engineers T 2-0-0 2 MC 
+4 24UMC004 Disaster Management T 2-0-0 2 MC 
+5 24UMC005 Indian Constitution and Knowledge System T 2-0-0 2 MC 
+6 24UMC006 Ergonomics and Industrial Safety T 2-0-0 2 MC 
+7 24UMC007 Introduction to Women and Gender Studies T 2-0-0 2 MC 
+ 
+CAREER PROGRESSION ELECTIVE 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UCPE11 Entrepreneurship Development T 3-0-0 3 3 EEC 
+2 24UCPE12 Research Methodology T 3-0-0 3 3 EEC 
+3 24UCPE13 Career Development Course  T 3-0-0 3 3 EEC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CATEGORY: PROFESSIONAL ELECTIVE COURSES (PEC) 
+VERTICAL 1: ENGINEERING DESIGN 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMEP11 Design Concepts in Engineering T 3-0-0 3 3 PEC 
+2 24UMEP12 Design for Manufacture and Assembly T 3-0-0 3 3 PEC 
+3 24UMEP13 Ergonomics in Design T 3-0-0 3 3 PEC 
+4 24UMEP14 Vibration Analysis and Control T 3-0-0 3 3 PEC 
+5 24UMEP15 Design of Jigs, Fixtures and Press 
+Tools T 3-0-0 3 3 PEC 
+6 24UMEP16 Machine Tool Design T 3-0-0 3 3 PEC 
+7 24UMEP17 CAD / CAM T 3-0-0 3 3 PEC 
+8 24UMEP18 Tribology and Industrial Applications T 3-0-0 3 3 PEC 
+9 24UMEP19 Product Development and Life Cycle 
+Management T 3-0-0 3 3 PEC 
+ 
+VERTICAL 2: MATERIALS AND MANUFACTURING 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMEP21 Physical Metallurgy T 3-0-0 3 3 PEC 
+2 24UMEP22 Composite Materials T 3-0-0 3 3 PEC 
+3 24UMEP23 Smart Materials and Structures T 3-0-0 3 3 PEC 
+4 24UMEP24 Biomaterials and Ceramics T 3-0-0 3 3 PEC 
+5 24UMEP25 Welding Technology LIT 2-0-2 4 3 PEC 
+6 24UMEP26 Additive Manufacturing LIT 2-0-2 4 3 PEC 
+7 24UMEP27 Lean Manufacturing T 3-0-0 3 3 PEC 
+8 24UMEP28 Digital Manufacturing and IoT T 3-0-0 3 3 PEC 
+9 24UMEP29 Non-Traditional Machining Processes T 3-0-0 3 3 PEC 
+10 24UMEP30 Failure Analysis and Non-Destructive 
+Testing T 3-0-0 3 3 PEC 
+ 
+VERTICAL 3: INDUSTRIAL ENGINEERING 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMEP31 Principles of Management T 3-0-0 3 3 PEC 
+2 24UMEP32 Total Quality Management T 3-0-0 3 3 PEC 
+3 24UMEP33 Industrial Safety T 3-0-0 3 3 PEC 
+4 24UMEP34 Computer Integrated Manufacturing T 3-0-0 3 3 PEC 
+5 24UMEP35 Plant Layout and Material Handling T 3-0-0 3 3 PEC 
+6 24UMEP36 Lean Supply Chain Management T 3-0-0 3 3 PEC 
+7 24UMEP37 Process Planning and Cost Estimation T 3-0-0 3 3 PEC 
+8 24UMEP38 Industrial Management T 3-0-0 3 3 PEC 
+9 24UMEP39 Operations Research T 3-0-0 3 3 PEC 
+ 
+VERTICAL 4: THERMAL ENGINEERING 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMEP41 Turbo machines T 3-0-0 3 3 PEC 
+2 24UMEP42 Renewable Energy Resources and 
+Systems T 3-0-0 3 3 PEC 
+3 24UMEP43 Power Plant Engineering T 3-0-0 3 3 PEC 
+4 24UMEP44 Advanced Internal Combustion Engines LIT 2-0-2 4 3 PEC 
+5 24UMEP45 Heating, Ventilation and Air-
+Conditioning LIT 2-0-2 4 3 PEC 
+6 24UMEP46 Thermal Power Engineering T 3-0-0 3 3 PEC 
+7 24UMEP47 Computational Solid Mechanics T 3-0-0 3 3 PEC 
+8 24UMEP48 Gas Dynamics and Jet Propulsion T 3-0-0 3 3 PEC 
+9 24UMEP49 Computational Fluid Dynamics and 
+Heat Transfer LIT 2-0-2 4 3 PEC 
+ 
+VERTICAL 5: ROBOTICS AND AUTOMATION 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMEP51 Sensors and Instrumentation T 3-0-0 3 3 PEC 
+2 24UMEP52 Measurements and Controls LIT 2-0-2 4 3 PEC 
+3 24UMEP53 Automation in Manufacturing T 3-0-0 3 3 PEC 
+4 24UMEP54 Smart Manufacturing T 3-0-0 3 3 PEC 
+5 24UMEP55 Robotics LIT 2-0-2 4 3 PEC 
+6 24UMEP56 Embedded Systems and Programming T 3-0-0 3 3 PEC 
+7 24UMEP57 Industry 4.0 T 3-0-0 3 3 PEC 
+8 24UMEP58 Microprocessor and Artificial 
+Intelligence for Industry T 3-0-0 3 3 PEC 
+ 
+VERTICAL 6: AUTOMOTIVE AND ENERGY ENGINEERING 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS CATEGORY 
+L-T-P TCP 
+1 24UMEP61 Automotive Engines and Subsystems LIT 2-0-2 4 3 PEC 
+2 24UMEP62 Hybrid and Electric Vehicle Technology T 3-0-0 3 3 PEC 
+3 24UMEP63 Smart Mobility and Vehicle Systems T 3-0-0 3 3 PEC 
+4 24UMEP64 Bioenergy Conversion Technologies T 3-0-0 3 3 PEC 
+5 24UMEP65 Energy Storage Devices T 3-0-0 3 3 PEC 
+6 24UMEP66 Energy Conservation in Industries T 3-0-0 3 3 PEC 
+7 24UMEP67 Energy Management and Equipment 
+Design T 3-0-0 3 3 PEC 
+8 24UMEP68 Carbon Footprint Estimation and 
+Reduction Techniques T 3-0-0 3 3 PEC 
+9 24UMEP69 Equipment for Pollution Control T 3-0-0 3 3 PEC 
+ 
+ 
+ 
+ 
+ 
+ 
+OPEN ELECTIVES 
+ 
+B. TECH. ARTIFICIAL INTELLIGENCE AND DATA SCIENCE 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS 
+L-T-P TCP 
+1 24UADO01 Introduction to Artificial Intelligence and 
+Machine Learning T 3-0-0 3 3 
+2 24UADO02 Introduction to Data Science T 3-0-0 3 3 
+3 24UADO03 Introduction to Big Data Analytics T 3-0-0 3 3 
+4 24UADO04 Data Visualization Techniques T 3-0-0 3 3 
+5 24UADO05 Introduction to Devops Tools T 3-0-0 3 3 
+6 24UADO06 Fundamentals of Storage Technologies  T 3-0-0 3 3 
+7 24UADO07 Basics of Cloud Services T 3-0-0 3 3 
+ 
+B.E. CSE (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING) 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS 
+L-T-P TCP 
+1 24UAMO01 Fundamentals of Artificial Intelligence T 3-0-0 3 3 
+2 24UAMO02 Principles of Machine Learning T 3-0-0 3 3 
+3 24UAMO03 Fundamentals of Deep Learning LIT 2-0-2 4 3 
+4 24UAMO04 Virtualization and Container 
+Technologies LIT 2-0-2 4 3 
+5 24UAMO05 Python Frameworks for Web 
+Applications LIT 2-0-2 4 3 
+6 24UAMO06 Fundamentals of Natural Language 
+Processing T 3-0-0 3 3 
+7 24UAMO07 AI for Mechanical Engineering T 3-0-0 3 3 
+8 24UAMO08 AI for food processing T 3-0-0 3 3 
+9 24UAMO09 AI for Game Development T 3-0-0 3 3 
+ 
+B. TECH. COMPUTER SCIENCE AND BUSINESS SYSTEMS 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS 
+L-T-P TCP 
+1 24UCBO01 Modern Web Applications T 3-0-0 3 3 
+2 24UCBO02 Applied Design Thinking T 3-0-0 3 3 
+3 24UCBO03 Human Computer Interaction T 3-0-0 3 3 
+4 24UCBO04 Social Information Network T 3-0-0 3 3 
+5 24UCBO05 Artificial Intelligence and Expert 
+Systems T 3-0-0 3 3 
+6 24UCBO06 Usability Design of Software 
+Applications T 3-0-0 3 3 
+7 24UCBO07 Data Mining and Analytics T 3-0-0 3 3 
+ 
+ 
+ 
+ 
+ 
+B.E. COMPUTER SCIENCE AND ENGINEERING 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS 
+L-T-P TCP 
+1 24UCSO01 Fundamentals of Data Structures LIT 2-0-2 4 3 
+2 24UCSO02 Principles of Computer Networks LIT 2-0-2 4 3 
+3 24UCSO03 Video Creation and Editing LIT 2-0-2 4 3 
+4 24UCSO04 Fundamentals of Database Systems LIT 2-0-2 4 3 
+5 24UCSO05 Basics of Web Development LIT 2-0-2 4 3 
+6 24UCSO06 Introduction to Digital Currency T 3-0-0 3 3 
+ 
+B.E. COMPUTER SCIENCE AND ENGINEERING (CYBER SECURITY) 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS 
+L-T-P TCP 
+1 24UCYO01 Cybersecurity Fundamentals T 3-0-0 3 3 
+2 24UCYO02 Information Security Management T 3-0-0 3 3 
+3 24UCYO03 Incident Response and Forensics T 3-0-0 3 3 
+4 24UCYO04 Cyber Law and Ethics T 3-0-0 3 3 
+5 24UCYO05 Security Operations T 3-0-0 3 3 
+6 24UCYO06 Introduction to Open Source 
+Intelligence T 3-0-0 3 3 
+ 
+B.E. ELECTRONICS AND COMMUNICATION ENGINEERING 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS 
+L-T-P TCP 
+1 24UECO01 Remote Sensing Concepts T 3-0-0 3 3 
+2 24UECO02 Sensors and Actuators T 3-0-0 3 3 
+3 24UECO03 Concepts in Mobile Robots T 3-0-0 3 3 
+4 24UECO04 Drone Technologies T 3-0-0 3 3 
+5 24UECO05 Geographical Information System T 3-0-0 3 3 
+6 24UECO06 Introduction to Embedded C LIT 2-0-2 4 3 
+7 24UECO07 Fundamentals of Microprocessors and 
+Microcontrollers LIT 2-0-2 4 3 
+8 24UECO08 Energy Storing Devices T 3-0-0 3 3 
+9 24UECO09 Semiconductor and Devices T 3-0-0 3 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B.Tech. INFORMATION TECHNOLOGY 
+ 
+S. 
+NO COURSE CODE COURSE TITLE COURSE 
+TYPE 
+PERIODS / WEEK 
+CREDITS 
+L-T-P TCP 
+1 24UITO01 Functional Programming T 3-0-0 3 3 
+2 24UITO02 Fundamentals of Cryptography T 3-0-0 3 3 
+3 24UITO03 Software Engineering T 3-0-0 3 3 
+4 24UITO04 Concepts of Object Oriented 
+Programming LIT 2-0-2 4 3 
+5 24UITO05 Fundamentals of Computer Vision T 3-0-0 3 3 
+6 24UITO06 Foundations of Block chain T 3-0-0 3 3 
+7 24UITO07 Game Theory and Mechanism Design T 3-0-0 3 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+GUIDELINES FOR CHOOSING COURSES UNDER PEC 
+ 
+ 
+ PEC- I PEC- II PEC- III PEC- IV PEC- V 
+ ENGINEERING 
+DESIGN 
+MATERIALS AND 
+MANUFACTURING 
+INDUSTRIAL 
+ENGINEERING 
+THERMAL 
+ENGINEERING 
+ROBOTICS 
+AND 
+AUTOMATION 
+AUTOMOTIVE 
+AND ENERGY 
+ENGINEERING 
+Cluster A 
+24UMEP11 
+Design 
+Concepts in 
+Engineering 
+24UMEP21 
+Physical Metallurgy 
+24UMEP33 
+Industrial Safety 
+24UMEP44 
+Advanced Internal 
+Combustion 
+Engines 
+24UMEP51 
+Sensors and 
+Instrumentation 
+24UMEP61 
+Automotive 
+Engines and 
+Subsystems 
+24UMEP13 
+Ergonomics in 
+Design 
+24UMEP22 
+Composite 
+Materials 
+ 24UMEP41 
+Turbo machines 
+24UMEP52 
+Measurements 
+and Controls 
+24UMEP62 
+Hybrid and 
+Electric Vehicle 
+Technology 
+24UMEP12 
+Design for 
+Manufacture 
+and Assembly 
+24UMEP23 
+Smart Materials 
+and Structures 
+  
+24UMEP56 
+Embedded 
+Systems and 
+Programming 
+24UMEP63 
+Smart Mobility 
+and Vehicle 
+Systems 
+ 
+24UMEP24 
+Biomaterials and 
+Ceramics 
+    
+Cluster B 
+24UMEP15 
+Design of Jigs, 
+Fixtures and 
+Press Tools 
+24UMEP26 
+Additive 
+Manufacturing 
+24UMEP31 
+Principles of 
+Management 
+24UMEP43 
+Power Plant 
+Engineering 
+24UMEP54 
+Smart 
+Manufacturing 
+24UMEP64 
+Bioenergy 
+Conversion 
+Technologies 
+24UMEP16 
+Machine Tool 
+Design 
+24UMEP27 
+Lean Manufacturing 
+24UMEP32 
+Total Quality 
+Management 
+24UMEP42 
+Renewable 
+Energy 
+Resources and 
+Systems 
+24UMEP57 
+Industry 4.0 
+24UMEP65 
+Energy Storage 
+Devices 
+24UMEP18 
+Tribology and 
+Industrial 
+Applications 
+24UMEP28 
+Digital 
+Manufacturing and 
+IoT 
+24UMEP38 
+Industrial 
+Management 
+24UMEP46 
+Thermal Power 
+Engineering 
+  
+Cluster C 
+24UMEP17 
+CAD / CAM 
+24UMEP25 
+Welding 
+Technology 
+24UMEP36 
+Lean Supply 
+Chain 
+Management 
+24UMEP47 
+Computational 
+Solid Mechanics 
+24UMEP55 
+Robotics 
+24UMEP66 
+Energy 
+Conservation in 
+Industries 
+ 
+24UMEP29 
+Non-Traditional 
+Machining 
+Processes 
+24UMEP35 
+Plant Layout 
+and Material 
+Handling 
+24UMEP49 
+Computational 
+Fluid Dynamics 
+and Heat Transfer 
+24UMEP53 
+Automation in 
+Manufacturing 
+24UMEP67 
+Energy 
+Management 
+and Equipment 
+Design 
+  
+24UMEP37 
+Process 
+Planning and 
+Cost Estimation 
+   
+  
+24UMEP39 
+Operations 
+Research 
+   
+Cluster D 
+24UMEP14 
+Vibration 
+Analysis and 
+Control 
+24UMEP30 
+Failure Analysis 
+and Non-
+Destructive Testing 
+24UMEP34 
+Computer 
+Integrated 
+Manufacturing 
+24UMEP48 
+Gas Dynamics 
+and Jet 
+Propulsion 
+24UMEP58 
+Microprocessor 
+and Artificial 
+Intelligence for 
+Industry 
+24UMEP68 
+Carbon 
+Footprint 
+Estimation and 
+Reduction 
+Techniques 
+Cluster E 
+24UMEP19 
+Product 
+Development 
+and Life Cycle 
+Management 
+  
+24UMEP45 
+Heating, 
+Ventilation and 
+Air-Conditioning 
+ 
+24UMEP69 
+Equipment for 
+Pollution Control 
+ 
+ 
+ 
+Pre-
+requisite 
+Courses 
+24UME301 
+Engineering 
+Mechanics 
+24UPY172 
+Engineering 
+Physics 
+24UME313 
+Manufacturing 
+Processes 
+24UME302 
+Engineering 
+Thermodynamics 
+24UEC271 
+Electrical and 
+Instrumentation 
+Engineering 
+24UEC271 
+Electrical and 
+Instrumentation 
+Engineering 
+24UME413 
+Theory of 
+Machines 
+24UCH173 
+Materials Chemistry 
+24UME414 
+Manufacturing 
+Technology 
+24UME312 
+Fluid Mechanics 
+and Machinery 
+24UME312 
+Fluid Mechanics 
+and Machinery 
+24UCH261 
+Environmental 
+Sciences and 
+Sustainability 
+24UME415 
+Strength of 
+Materials 
+24UPY263 
+Physics for 
+Mechanical 
+Engineering 
+24UMA463 
+Optimization 
+Techniques 
+24UME412 
+Thermal 
+Engineering 
+24UME413 
+Theory of 
+Machines 
+24UME412 
+Thermal 
+Engineering 
+ 
+24UME313 
+Manufacturing 
+Processes 
+ 
+24UME511 
+Heat and Mass 
+Transfer 
+24UME411 
+Hydraulics and 
+Pneumatics 
+24UME501 
+Design of 
+Machine 
+Elements 
+ 
+24UME311 
+Engineering 
+Materials and 
+Metallurgy 
+    
+ 
+Criteria for Choosing Courses for Professional Electives 
+PEC - I: Any course from any cluster is fine. 
+PEC - II:  Can be from “Materials and Manufacturing” and “Industrial Engineering”. Any course from any cluster is 
+fine. 
+PEC - III: Any course from any cluster is fine. 
+PEC - IV: Any course from any cluster is fine. 
+PEC - V:  Better to choose a course from cluster A, C or D. Any other course is also fine. 
+It is better to choose Courses from a Cluster in the prescribed order 
+Open elective - Course Preferences for students belonging to MECH Department  
+S.No Departments Course Preference 
+1 AI & DS 24UADO02, 24UADO06 
+2 AI & ML 24UAMO01, 24UAMO07 
+3 CSBS 24UCBO03, 24UCBO07 
+4 CSE 24UCSO03, 24UCSO06 
+5 CYS 24UCYO01, 24UCYO04 
+6 ECE 24UECO02, 24UECO07 
+7 IT 24UITO01, 24UITO03 
+ 

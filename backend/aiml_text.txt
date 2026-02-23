@@ -1,0 +1,842 @@
+KGISL INSTITUTE OF TECHNOLOGY COIMBATORE 
+REGULATIONS 2024 (for students admitted from AY2024-25) 
+CHOICE BASED CREDIT SYSTEM 
+B.E. CSE (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING) 
+CURRICULUM AND SYLLABI FOR I TO VIII SEMESTERS 
+ 
+SEM HSMC BSC ESC PCC PEC OEC EEC Total 
+I 4 10 9     23 
+II 4 9 9    3 25 
+III  4 4 16   2 26 
+IV  4  15   6 25 
+V 2   10 6  3 21 
+VI    6 9 3 4 22 
+VII 3   4  3 6 16 
+VIII       10 10 
+Total 13 27 22 51 15 6 34 168 
+% of 
+Category 7.7% 16.1% 13.1% 30.4% 8.9% 3.6% 20.2% 100% 
+ 
+CATEGORY OF COURSES 
+  
+HSMC Humanities Science and Management 
+Course PEC Professional Elective Course 
+BSC Basic Science Course OEC  Open Elective Course 
+ESC Engineering Science Course EEC  Employability Enhancement Course 
+PCC Professional Core Course MC Mandatory Course 
+ 
+TYPE OF COURSE 
+ 
+LIT Laboratory Integrated Theory PCD Personality Character Development 
+T Theory VC Value Added Course 
+L Laboratory Course COT Community Outreach and Intervention 
+through Technical Activities 
+IP Internship Programme IT Industrial Training/ Internship 
+MC Mandatory Course CC Comprehension Course 
+NCC NCC Credit Course PW Project Work 
+ 
+ 
+S.No Category 
+Suggested 
+Breakup of 
+Credits 
+Credits 
+1 Humanities, Social Sciences and Management Courses 
+(HSMC) 
+10-13 13 
+2 Basic Science Courses (BSC) 23 – 27 27 
+3 Engineering Science Courses (ESC) 11-22 22 
+4 Professional Core Courses (PCC) 50-62 51 
+5 Professional Elective Courses (PEC) 15-18 15 
+6 Open Elective Courses (OEC) 6 6 
+7 Employability Enhancement Courses (EEC) 30-36 34 
+8 Mandatory Courses (MC) Non-Credit Non-Credit 
+ Total 165 - 170 168 
+ 
+ 
+ 
+ 
+ 
+  
+SEMESTER I 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UTA161 தமிழர் மரபு/Heritage of Tamils T 1-0-0 1 1 HSMC 
+2 24UEN171 Communicative English for Engineers 
+and Professionals - I LIT 2-0-2 4 3 HSMC 
+3 24UMA161 Calculus and Matrix Algebra T 3-1-0 4 4 BSC 
+4 24UPY171 Physics for Engineering and 
+Technology LIT 2-0-2 4 3 BSC 
+5 24UCH171 Engineering Chemistry LIT 2-0-2 4 3 BSC 
+6 24UCS161 Computational Thinking LIT 2-1-0 3 3 ESC 
+7 24UCS171 Python Programming LIT 3-0-2 5 4 ESC 
+8 24UME266 Engineering Practices Laboratory L 0-0-4 4 2 ESC 
+9 24UPD191 Personality and Character 
+Development PCD - 2 - EEC 
+10 24UIP181 Induction Programme IP - - - MC 
+11 24UMC001 Mandatory Course I - Yoga and 
+Meditation Fundamentals MC 2-0-0 2 - MC 
+Total 23  
+SEMESTER II 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UTA261 தமிழரும ் ததொழில ் நுட்பமும ்/ 
+Tamils and Technology T 1-0-0 1 1 HSMC 
+2 24UEN271 Communicative English for Engineers 
+and Professionals - II LIT 2-0-2 4 3 HSMC 
+3 24UMA261 Statistics and Numerical Methods T 3-1-0 4 4 BSC 
+4 24UPY261 Physics for Information Science T 3-0-0 3 3 BSC 
+5 24UCH261 Environmental Sciences 
+ and Sustainability T 2-0-0 2 2 BSC 
+6 24UCS271 Programming in C LIT 3-0-2 5 4 ESC 
+7 24UEC272 Basic Electrical and Electronics 
+Engineering LIT 2-0-2 4 3 ESC 
+8 24UME166 Engineering Graphics L 0-0-4 4 2 ESC 
+9 24USD296 Skill Development Course LIT 2-0-2 4 3 EEC 
+10 24UPD291 Personality and Character 
+Development PCD - 2 - EEC 
+11 24UMC002 Mandatory Course II – Emotional 
+Balance and Mental Wellness MC 1-0-0 1 - MC 
+12 24UNC201 NCC Credit Course Level 1 NCC - - 1 - 
+Total 25  
+ 
+ 
+SEMESTER III 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UMA361 Algebra and Combinatorics T 3-1-0 4 4 BSC 
+2 24UEC341 Digital Principles and Computer 
+Organization LIT 3-0-2 5 4 ESC 
+3   24UAD311 Foundations of Data Science LIT 3-0-2 5 4 PCC 
+4 24UTI311 Data Structures and Algorithms LIT 3-0-2 5 4 PCC 
+5 24UCS312 Object Oriented Programming LIT 3-0-2 5 4 PCC 
+6 24UCS412 Database Management 
+Systems LIT 3-0-2 5 4 PCC 
+7  Skill Development Elective - I  
+L 
+ 
+0-0-4 
+ 
+4 
+ 
+2 
+ 
+EEC 
+8 24UPD391 Personality and Character 
+Development PCD - 2 - EEC 
+9 24UVC386 Value Added Course VC - - 2 EEC 
+Total 26  
+SEMESTER IV 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UMA463 Optimization Techniques T 3-1-0 4 4 BSC 
+2 24UAM411 Artificial Intelligence LIT 3-0-2 5 4 PCC 
+3 24UCB513 Object Oriented Software Engineering LIT 2-0-2 4 3 PCC 
+4 24UCS511 Computer Networks LIT 3-0-2 5 4 PCC 
+5 24UCS414 Operating Systems LIT 3-0-2 5 4 PCC 
+6  Career Progression Elective T 3-0-0 3 3 EEC 
+7  Skill Development Elective - II L 0-0-4 4 2 EEC 
+8 24UCO492 Community Outreach and Intervention 
+through Technical Activities COT - 1 1 EEC 
+9 24UPD491 Personality and Character 
+Development PCD - 2 - EEC 
+ 24UVC486 Value Added Course VC - - 2 EEC 
+11 24UNC401 NCC Credit Course Level 2 NCC - - 2 - 
+Total 25  
+SEMESTER V 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UHV501 Universal Human Values T 2-0-0 2 2 HSMC 
+2 24UAM511 Natural Language Processing LIT 2-0-2 4 3 PCC 
+3 24UAM512 Machine Learning LIT 3-0-2 5 4 PCC 
+4 24UIT411 Web Technologies LIT 2-0-2 4 3 PCC 
+5  Professional Elective I T/LIT - - 3 PEC 
+6  Professional Elective II T/LIT - - 3 PEC 
+7  Skill Development Elective - III L 0-0-4 4 2 EEC 
+ 
+ 
+ 
+ 
+8 24UAM593 Industrial Training/ Internship IT - - 1 EEC 
+9 24UPD591 Personality and Character 
+Development PCD - 2 - EEC 
+10 24UVC586 Value Added Course VC - - 2 EEC 
+11  Mandatory Course III MC 2-0-0 2 - MC 
+Total 21  
+SEMESTER VI 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UAM611 Deep Learning for Vision LIT 2-0-2 4 3 PCC 
+2 24UAD513 Generative AI  LIT 2-0-2 4 3 PCC 
+3  Professional Elective III T/LIT - - 3 PEC 
+4  Professional Elective IV T/LIT - - 3 PEC 
+5  Professional Elective V T/LIT - - 3 PEC 
+6  Open Elective – I T/LIT - - 3 OEC 
+7  Skill Development Elective - IV L 0-0-4 4 2 EEC 
+8 24UCO692 Community Outreach and Intervention 
+through Technical Activities COT - - 2 EEC 
+9 24UPD691 Personality and Character 
+Development PCD - 2 - EEC 
+10 24UVC686 Value Added Course VC - - 2 EEC 
+11  Mandatory Course IV MC 2-0-0 2 - MC 
+12 24UNC601 NCC Credit Course Level 3 NCC - - 3 - 
+Total 22  
+SEMESTER VII 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UIT701 Engineering Economics and 
+Management T 3-0-0 3 3 HSMC 
+2 24UCY512 Cryptography and Cyber Security LIT 3-0-2 5 4 PCC 
+3  Open Elective – II T/LIT - - 3 OEC 
+4 24UAM793 Industrial Training / Internship IT - - 2 EEC 
+5 24UAM794 Comprehension Course CC - - 2 EEC 
+6 24UAM795 Mini Project  PW 0-0-4 4 2 EEC 
+7 24UVC786 Value Added Course VC - - 2 EEC 
+Total 16  
+SEMESTER VIII 
+S.No Course 
+Code Course Name Course 
+Type 
+Periods / Week Credits Category L-T-P TCP 
+1 24UAM895 Project Work PW 0-0-20 20 10 EEC 
+Total 10  
+ 
+ 
+  
+MANDATORY COURSES 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UMC001 Yoga and Meditation Fundamentals T 1-0-0 1 - MC 
+2 24UMC002 Emotional Balance and Mental 
+Wellness T 1-0-0 1 - MC 
+3 24UMC003 Ethical behavior and code of conduct 
+for Engineers T 2-0-0 2 - MC 
+4 24UMC004 Disaster Management T 2-0-0 2 - MC 
+5 24UMC005 Indian Constitution and Knowledge 
+System T 2-0-0 2 - MC 
+6 24UMC006 Ergonomics and Industrial Safety T 2-0-0 2 - MC 
+7 24UMC007 Introduction to Women and Gender 
+Studies T 2-0-0 2 - MC 
+CAREER PROGRESSION ELECTIVE 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY 
+L-T-P TCP 
+1 24UCPE11 Entrepreneurship Development T 3-0-0 3 3 EEC 
+2 24UCPE12 Research Methodology T 3-0-0 3 3 EEC 
+3 24UCPE13 Career Development Course  T 3-0-0 3 3 EEC 
+PROFESSIONAL ELECTIVE COURSES (PEC) 
+ 
+ 
+ 
+  
+VERTICAL I: CLOUD COMPUTING AND DATA CENTER TECHNOLOGIES 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UITP01 Cloud Computing and Virtualization LIT 2-0-2 4 3 PEC 
+2 24UITP02 Cloud Services Management LIT 2-0-2 4 3 PEC 
+3 24UITP03 Data Warehousing LIT 2-0-2 4 3 PEC 
+4 24UITP04 Storage Technologies LIT 2-0-2 4 3 PEC 
+5 24UITP05 Software Defined Networks T 3-0-0 3 3 PEC 
+6 24UITP06 Security and Privacy in Cloud LIT 2-0-2 4 3 PEC 
+7 24UITP07 Edge Computing and IoT LIT 2-0-2 4 3 PEC 
+8 24UITP08 Serverless Computing LIT 2-0-2 4 3 PEC 
+VERTICAL II: INFORMATION SECURITY AND PRIVACY 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UCYP09 Introduction to Information Security T 3-0-0 3 3 PEC 
+2 24UCYP10 Data Privacy and Protection LIT 2-0-2 4 3 PEC 
+3 24UCYP11 Information Security Governance T 3-0-0 3 3 PEC 
+4 24UCYP12 Access Control and Identity 
+Management T 3-0-0 3 3 PEC 
+5 24UCYP13 Security Auditing and Compliance T 3-0-0 3 3 PEC 
+6 24UCYP14 Incident Response and Management LIT 2-0-2 4 3 PEC 
+7 24UCYP15 Security and Privacy Engineering T 3-0-0 3 3 PEC 
+8 24UCYP16 Ethical and Legal Issues in Information 
+Security T 3-0-0 3 3 PEC 
+VERTICAL III: FULL STACK DEVELOPMENT 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UCSP01 Web Development LIT 2-0-2 4 3 PEC 
+2 24UCSP02 UI and UX Design LIT 2-0-2 4 3 PEC 
+3 24UCSP03 Responsive Web Design T 3-0-0 3 3 PEC 
+4 24UCSP04 Mobile Application Development LIT 2-0-2 4 3 PEC 
+5 24UCSP05 Software Testing and Automation LIT 2-0-2 4 3 PEC 
+6 24UCSP06 Agile Methodologies T 3-0-0 3 3 PEC 
+7 24UCSP07 IOT Concepts and Applications T 3-0-0 3 3 PEC 
+8 24UCSP08 Web Application Security LIT 2-0-2 4 3 PEC 
+ 
+ 
+ 
+ 
+ 
+VERTICAL IV: INTELLIGENCE SYSTEMS & MACHINE LEARNING 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UAMP01 Knowledge Engineering T 3-0-0 3 3 PEC 
+2 24UAMP02 Soft Computing LIT 2-0-2 4 3 PEC 
+3 24UAMP03 Text and Speech Analysis LIT 2-0-2 4 3 PEC 
+4 24UAMP04 Optimization Methods for  ML 
+Algorithms  T 3-0-0 3 3 PEC 
+5 24UAMP05 Game Theory T 3-0-0 3 3 PEC 
+6 24UAMP06 Cognitive Science T 3-0-0 3 3 PEC 
+7 24UAMP07 Reinforcement Learning T 3-0-0 3 3 PEC 
+8 24UAMP08 Security in AI T 3-0-0 3 3 PEC 
+9 24UAMP09 Ethical AI T 3-0-0 3 3 PEC 
+10 24UAMP10 MLOps LIT 2-0-2 4 3 PEC 
+VERTICAL V: DATA SCIENCE & ANALYTICS 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UCBP18 Predictive Analytics T 3-0-0 3 3 PEC 
+2 24UCBP19 Recommender Systems LIT 2-0-2 4 3 PEC 
+3 24UCBP20 Neural Networks and Deep Learning T 3-0-0 3 3 PEC 
+4 24UCBP21 Image and Video Analytics LIT 2-0-2 4 3 PEC 
+5 24UCBP22 Computer Vision T 3-0-0 3 3 PEC 
+6 24UCBP23 DevOps and Software Deployment LIT 2-0-2 4 3 PEC 
+7 24UCBP24 Business Intelligence LIT 2-0-2 4 3 PEC 
+8 24UCBP25 Parallel and Distributed Computing LIT 2-0-2 4 3 PEC 
+9 24UAMP24 Big Data and Analytics and 
+Management 
+LIT 2-0-2 4 3 PEC 
+VERTICAL VI: CREATIVE MEDIA 
+S.NO COURSE 
+CODE COURSE NAME COURSE 
+TYPE 
+PERIODS / WEEK CREDITS CATEGORY L-T-P TCP 
+1 24UADP01 Design Thinking T 3-0-0 3 3 PEC 
+2 24UADP02 Multimedia and Animation LIT 2-0-2 4 3 PEC 
+3 24UADP03 Video Creation and Editing Techniques LIT 2-0-2 4 3 PEC 
+4 24UADP04 Digital Marketing LIT 2-0-2 4 3 PEC 
+5 24UADP05 Game Development LIT 2-0-2 4 3 PEC 
+6 24UADP06 Visual Effects LIT 2-0-2 4 3 PEC 
+7 24UADP07 Digital Photography T 3-0-0 3 3 PEC 
+8 24UADP08 Media Ethics and Governance T 3-0-0 3 3 PEC 
+VERTICAL VII: MANAGEMENT 
+S.NO. COURSE 
+CODE 
+ 
+COURSE NAME 
+COURSE 
+TYPE 
+PERIODS / 
+WEEK 
+ 
+CREDITS 
+CATE 
+GORY 
+L-T-P TCP 
+1 24UCBP01 Customer Relation Management T 3-0-0 3 3 HSMC 
+2 24UCBP02 Human Resource Management for 
+Entrepreneurs T 3-0-0 3 3 HSMC 
+3 24UCBP03 Supply Chain Management T 3-0-0 3 3 HSMC 
+4 24UCBP04 IT Project Management LIT 2-0-2 3 3 HSMC 
+5 24UCBP05 Behavioral Economics T 3-0-0 3 3 HSMC 
+6 24UCBP06 E-Commerce T 3-0-0 3 3 HSMC 
+7 24UCBP07 Enterprise Resource Planning T 3-0-0 3 3 HSMC 
+8 24UCBP08 Financial Technology Innovations T 3-0-0 3 3 HSMC 
+  
+OPEN ELECTIVES 
+ 
+B.E COMPUTER SCIENCE AND ENGINEERING  
+ 
+ 
+ 
+B.E. COMPUTER SCIENCE AND ENGINEERING (CYBER SECURITY) 
+ 
+ 
+ 
+B. TECH. ARTIFICIAL INTELLIGENCE AND DATA SCIENCE 
+ 
+ 
+ 
+  
+S.No Course 
+Code Course Name Course 
+Type 
+Periods / Week Credits L-T-P TCP 
+1 24UCSO01 Fundamentals of Data Structures LIT 2-0-2 4 3 
+2 24UCSO02 Principles of Computer Networks  LIT 2-0-2 4 3 
+3 24UCSO03 Video Creation and Editing  LIT 2-0-2 4 3 
+4 24UCSO04 Fundamentals of Database Systems  LIT 2-0-2 4 3 
+5 24UCSO05 Basics of Web Development  LIT 2-0-2 4 3 
+6 24UCSO06 Introduction to Digital Currency  T 3-0-0 3 3 
+S.No Course 
+Code Course Name Course 
+Type 
+Periods / Week Credits L-T-P TCP 
+1 24UCYO01 Cybersecurity Fundamentals T 3-0-0 3 3 
+2 24UCYO02 Information Security Management T 3-0-0 3 3 
+3 24UCYO03 Incident Response and Forensics T 3-0-0 3 3 
+4 24UCYO04 Cyber Law and Ethics T 3-0-0 3 3 
+5 24UCYO05 Security Operations T 3-0-0 3 3 
+6 24UCYO06 Introduction to Open-Source Intelligence. T 3-0-0 3 3 
+S.No Course 
+Code Course Name Course 
+Type 
+Periods / Week Credits L-T-P TCP 
+1 24UADO01 Introduction to Artificial Intelligence and   
+Machine Learning T 3-0-0 3 3 
+2 24UADO02  Introduction to Data Science T 3-0-0 3 3 
+3 24UADO03  Introduction to Big Data Analytics T 3-0-0 3 3 
+4 24UADO04  Data Visualization Techniques T 3-0-0 3 3 
+5 24UADO05  Introduction to Devops Tools T 3-0-0 3 3 
+6 24UADO06  Fundamentals of Storage Technologies  T 3-0-0 3 3 
+7 24UADO07  Basics of Cloud Services T 3-0-0 3 3 
+8 24UADP08 Media Ethics and Governance T 3-0-0 3 3 
+B.TECH. COMPUTER SCIENCE AND BUSINESS SYSTEMS 
+ 
+ 
+B.TECH. INFORMATION TECHNOLOGY  
+ 
+ 
+B.E. ELECTRONICS AND COMMUNICATION ENGINEERING 
+ 
+ 
+  
+S.No Course 
+Code Course Name Course 
+Type 
+Periods / Week Credits L-T-P TCP 
+1 24UCBO01 Modern Web Applications   T 3-0-0 3 3 
+2 24UCBO02 Applied Design Thinking   T 3-0-0 3 3 
+3 24UCBO03 Human Computer Interaction T 3-0-0 3 3 
+4 24UCBO04 Social Information Network T 3-0-0 3 3 
+5 24UCBO05 Artificial Intelligence and Expert Systems T 3-0-0 3 3 
+6 24UCBO06 Usability Design of Software Applications T 3-0-0 3 3 
+7 24UCBO07 Data Mining and Analytics T 3-0-0 3 3 
+S.No Course 
+Code Course Name Course 
+Type 
+Periods / Week Credits L-T-P TCP 
+1 24UITO01 Functional Programming T 3-0-0 3 3 
+2 24UITO02 Fundamentals of Cryptography T 3-0-0 3 3 
+3 24UITO03 Software Engineering T 3-0-0 3 3 
+4 24UITO04 Concepts of Object Oriented 
+Programming LIT 2-0-2 4 3 
+5 24UITO05 Fundamentals of Computer Vision T 3-0-0 3 3 
+6 24UITO06 Foundations of Block chain T 3-0-0 3 3 
+7 24UITO07 Game Theory and Mechanism Design T 3-0-0 3 3 
+S.No Course 
+Code Course Name Course 
+Type 
+Periods / Week Credits L-T-P TCP 
+1 24UECO01 Remote Sensing Concepts T 3-0-0 3 3 
+2 24UECO02 Sensors and Actuators  T 3-0-0 3 3 
+3 24UECO03 Concepts in Mobile Robots T 3-0-0 3 3 
+4 24UECO04 Drone Technologies T 3-0-0 3 3 
+5 24UECO05 Geographical Information System T 3-0-0 3 3 
+6 24UECO06 Introduction to Embedded C  LIT 2-0-2 4 3 
+7 24UECO07 Fundamentals of Microprocessors and 
+Microcontrollers LIT 2-0-2 4 3 
+8 24UECO08 Energy Storing Devices T 3-0-0 3 3 
+9 24UECO09 Semiconductor and Devices T 3-0-0 3 3 
+B.E. MECHANICAL ENGINEERING 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+S.No Course 
+Code Course Name Course 
+Type 
+Periods / Week Credits L-T-P TCP 
+1 24UMEO01 Fundamentals of Additive Manufacturing T 3-0-0 3 3 
+2 24UMEO02 Renewable Energy Systems T 3-0-0 3 3 
+3 24UMEO03 Principles of Safety Management T 3-0-0 3 3 
+4 24UMEO04 Introduction to Mechatronics Systems T 3-0-0 3 3 
+5 24UMEO05 Product Design and Development T 3-0-0 3 3 
+6 24UMEO06 Fundamentals of Electrical Vehicle 
+Technology T 3-0-0 3 3 
+Department of AI&ML 
+Guidelines for choosing Courses under PEC 
+ 
+ 
+ PEC- I PEC- II PEC- III PEC- IV PEC- V 
+ CC ISP FSD IS&ML DS CM MGMT 
+ 
+ 
+ 
+ 
+ 
+ 
+Cluster 
+A 
+24UITP01 
+Cloud 
+Computing and 
+Virtualization 
+24UCYP09 
+Introduction to 
+Information 
+Security 
+24UCSP01 
+Web 
+Development  
+24UAMP01 
+Knowledge 
+Engineering 
+24UCBP22 
+Computer 
+Vision 
+24UADP01 
+Design 
+Thinking 
+24UCBP01 
+Customer 
+Relation 
+Management 
+24UITP02 
+Cloud Services 
+Management 
+24UCYP12 
+Access Control 
+and Identity 
+Management 
+24UCSP02 
+UI and UX 
+Design 
+24UAMP06 
+Cognitive 
+Science 
+24UCBP21 
+Image and 
+Video 
+Analytics 
+24UADP02 
+Multimedia 
+and Animation 
+24UCBP03 
+Supply Chain 
+Management 
+24UITP06 
+Security and 
+Privacy in 
+Cloud 
+24UCYP10 
+Data Privacy 
+and Protection 
+24UCSP03 
+Responsive 
+Web Design 
+  
+24UADP03 
+Video Creation 
+and Editing 
+Techniques 
+24UCBP06 
+E-Commerce 
+24UITP08 
+Serverless 
+Computing 
+24UCYP14 
+Incident 
+Response and 
+Management 
+24UCSP08 
+Web 
+Application 
+Security 
+  24UADP06 
+Visual Effects  
+24UITP04 
+Storage 
+Technologies 
+      
+Cluster 
+B 24UITP05 
+Software 
+Defined 
+Networks 
+24UCYP15 
+Security and 
+Privacy 
+Engineering 
+24UCSP04 
+Mobile 
+Application 
+Development 
+24UAMP02 
+Soft 
+Computing 
+24UCBP24 
+Business 
+Intelligence 
+24UADP05 
+Game 
+Development 
+24UCBP07 
+Enterprise 
+Resource 
+Planning 
+ 
+24UCYP13 
+Security 
+Auditing and 
+Compliance 
+ 
+24UAMP03 
+Text and 
+Speech 
+Analysis 
+24UCBP18 
+Predictive 
+Analytics 
+ 
+24UCBP08 
+Financial 
+Technology 
+Innovations 
+ 
+24UCYP11 
+Information 
+Security 
+Governance 
+ 
+24UAMP04 
+Optimization 
+Methods for  
+ML 
+Algorithms 
+24UCBP19 
+Recommende
+r Systems 
+  
+ 
+24UCYP16 
+Ethical and 
+Legal Issues in 
+Information 
+Security 
+ 24UAMP05 
+Game Theory    
+Cluster  
+C 24UITP07 
+Edge 
+Computing and 
+IoT 
+ 
+24UCSP06 
+Agile 
+Methodologies 
+24UAMP08 
+Security in AI  
+24UCBP23 
+DevOps and 
+Software 
+Deployment 
+24UADP04 
+Digital 
+marketing 
+24UCBP02H
+uman 
+Resource 
+Management 
+for 
+Entrepreneurs  
+  
+24UCSP05 
+Software 
+Testing and 
+Automation  
+24UAMP09 
+Ethical AI  
+24UADP07  
+Digital 
+Photography 
+24UCBP05 
+Behavioral 
+Economics 
+Cluster 
+D 24UITP03 
+Data 
+Warehousing 
+24UCBP29 
+Quantum 
+Computing 
+24UCSP07 
+IOT Concepts 
+and 
+Applications 
+24UCSP09 
+Evolutionary 
+Computing 
+24UCBP25 
+Parallel and 
+Distributed 
+Computing 
+24UADP08  
+Media Ethics 
+and 
+Governance 
+24UCBP04 
+IT Project 
+Management 
+Cluster E 
+   
+24UAMP07 
+Reinforcemen
+t Learning 
+24UCBP20 
+Neural 
+Networks and 
+Deep 
+Learning 
+  
+Pre-
+requisite 
+Courses  
+24UEC341 
+Digital 
+Principles and 
+Computer 
+Organization 
+24UCS511 
+Computer 
+Networks 
+24UTI311 
+Data 
+Structures and 
+Algorithms 
+  24UAD311 
+Foundations 
+of Data 
+Science 
+24UCS414 
+Operating 
+Systems 
+  
+24UCS412 
+Database 
+Management 
+Systems 
+ 
+24UCS312 
+Object 
+Oriented 
+Programming 
+24UAM411 
+Artificial 
+Intelligence 
+24UAM511 
+Natural 
+Language 
+Processing 
+  
+  
+24UCB513
+ Object 
+Oriented 
+Software 
+Engineering 
+24UAM512 
+Machine 
+Learning 
+   
+ 
+  
+24UIT411
+ Web 
+Technologies 
+    
+Criteria for Choosing Courses  for  Professional  Electives  
+PEC – I : Any course from any cluster is fine 
+PEC – II: Any course from any cluster is fine 
+PEC – III: Any course from any cluster is fine 
+PEC – IV: Any course from any cluster is fine 
+PEC – V: Any course from any cluster is fine 
+* It is better to choose Courses from a Cluster in the prescribed order  
+Open elective - Course Preferences List  
+S.No Departments Course Preference  
+1 CSE 24UCSO06 
+2 AI & DS 24UADO03 
+24UADO04 
+3 CSBS 24UCBO03 
+24UCBO04 
+24UCBO06 
+24UCBO07 
+4 CYS 24UCYO01 
+24UCYO02 
+24UCYO03 
+24UCYO04 
+24UCYO05 
+24UCYO06 
+5 ECE 24UECO01 
+24UECO02 
+24UECO03 
+24UECO04 
+24UECO05 
+24UECO06 
+24UECO07 
+24UECO08 
+6 IT 24UITO02 
+24UITO03 
+24UITO06 
+24UITO07 
+7 Mechanical  24UMEO02 
+24UMEO06 
+ 
